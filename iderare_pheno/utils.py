@@ -19,7 +19,7 @@ def list2tsv(
         rank = [i + 1 for i in range(len(name))]
         data = {"rank": rank, "id": term_id, "name": name, "score": sim_score}
     df = pd.DataFrame(data)
-    df.to_csv("output/{}.tsv".format(filename), index=False, sep="\t")
+    df.to_csv("{}.tsv".format(filename), index=False, sep="\t")
     return df
 
 

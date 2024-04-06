@@ -1,6 +1,7 @@
+import os
 from pyhpo import HPOSet, Omim, Ontology, stats
 
-Ontology("phenotype/rawdl_20240310")
+Ontology(os.path.join(os.path.dirname(__file__), "phenotype", "data"))
 
 
 # Convert OMIM code to OMIM Class Object

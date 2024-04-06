@@ -1,15 +1,16 @@
+import os
 import pandas as pd
 
 # Declare the folder path for phenotype data source
-phenotype_folder = "phenotype/subset"
+phenotype_folder = os.path.dirname(__file__)
 
 # Declare database useds for mapping
-icd10omim = "icd102omim_subset.tsv"
-loinc2hpo = "loinc2hpo_standardized.tsv"
-orpha2omim = "orpha2omim_subset.tsv"
-omim2hpo = "omim2hpo_subset.tsv"
-snomed2hpo = "snomed2hpo_subset.tsv"
-snomed2orpha = "snomed2orpha_subset.tsv"
+icd10omim = os.path.join(phenotype_folder, "phenotype", "subset", "icd102omim_subset.tsv")
+loinc2hpo = os.path.join(phenotype_folder, "phenotype", "subset", "loinc2hpo_standardized.tsv")
+orpha2omim = os.path.join(phenotype_folder, "phenotype", "subset", "orpha2omim_subset.tsv")
+omim2hpo = os.path.join(phenotype_folder, "phenotype", "subset", "omim2hpo_subset.tsv")
+snomed2hpo = os.path.join(phenotype_folder, "phenotype", "subset", "snomed2hpo_subset.tsv")
+snomed2orpha = os.path.join(phenotype_folder, "phenotype", "subset", "snomed2orpha_subset.tsv")
 
 # iderare yaml configuration file
 yaml_file = "iderare.yaml"
@@ -18,12 +19,12 @@ yaml_file = "iderare.yaml"
 clinical_data = "clinical_data.txt"
 
 # Read the clinical data and parse the data
-icd10omim_df = pd.read_csv(phenotype_folder + "/" + icd10omim, sep="\t")
-loinc2hpo_df = pd.read_csv(phenotype_folder + "/" + loinc2hpo, sep="\t")
-orpha2omim_df = pd.read_csv(phenotype_folder + "/" + orpha2omim, sep="\t")
-omim2hpo_df = pd.read_csv(phenotype_folder + "/" + omim2hpo, sep="\t")
-snomed2hpo_df = pd.read_csv(phenotype_folder + "/" + snomed2hpo, sep="\t")
-snomed2orpha_df = pd.read_csv(phenotype_folder + "/" + snomed2orpha, sep="\t")
+icd10omim_df = pd.read_csv(icd10omim, sep="\t")
+loinc2hpo_df = pd.read_csv(loinc2hpo, sep="\t")
+orpha2omim_df = pd.read_csv(orpha2omim, sep="\t")
+omim2hpo_df = pd.read_csv(omim2hpo, sep="\t")
+snomed2hpo_df = pd.read_csv(snomed2hpo, sep="\t")
+snomed2orpha_df = pd.read_csv(snomed2orpha, sep="\t")
 
 
 # Convert SNOMED to ORPHA First

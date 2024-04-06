@@ -86,7 +86,9 @@ pip install -e .
 ## Usage
 
 ```python
-from iderare_pheno import iderare_pheno
+from iderare_pheno.converter import term2omim, term2orpha, term2hpo, batchconvert
+from iderare_pheno.simrec import hpo2omim_similarity, omim_recommendation, hpo2name
+from iderare_pheno.utils import linkage_dendrogram, list2tsv
 ```
 
 ## Team

@@ -67,7 +67,6 @@ exclude = [
     "docs*",
     "scripts*"
 ]
-include = ["iderare_pheno", "phenotype", "phenotype.*"]
 
 [tool.setuptools]
 include-package-data = true

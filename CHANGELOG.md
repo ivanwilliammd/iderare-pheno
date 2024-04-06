@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## Unreleased
 
+## [v0.3.1](https://github.com/ivanwilliammd/iderare-pheno/releases/tag/v0.3.1) - 2024-04-07
+- Fixing of utils list2tsv function
+- Fix relative path of the data folder
+
 ## [v0.3.0](https://github.com/ivanwilliammd/iderare-pheno/releases/tag/v0.3.0) - 2024-04-07
 - Join the similarity and recommendation class to share the same Ontology data from [hpo3 library](https://github.com/anergictcell/hpo3)
 - Refactor the utils.py to be more readable and maintainable
