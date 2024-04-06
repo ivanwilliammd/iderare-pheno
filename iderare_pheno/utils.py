@@ -5,6 +5,7 @@ import pandas as pd
 import scipy.cluster
 from matplotlib import pyplot as plt
 
+
 # Convert data(s) to dataframe
 def df2tsv(term_id, name, sim_score=None, filename='{}_result'.format(datetime.now().strftime("%Y%m%d_%H%M%S"))):
     if sim_score is None:
