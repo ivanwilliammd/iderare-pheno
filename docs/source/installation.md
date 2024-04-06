@@ -1,23 +1,23 @@
 Installation
 ============
 
-**my-package** supports Python >= 3.8.
+**iderare-pheno** supports Python >= 3.8.
 
 ## Installing with `pip`
 
-**my-package** is available [on PyPI](https://pypi.org/project/my-package/). Just run
+**iderare-pheno** is available [on PyPI](https://pypi.org/project/iderare-pheno/). Just run
 
 ```bash
-pip install my-package
+pip install iderare-pheno
 ```
 
 ## Installing from source
 
-To install **my-package** from source, first clone [the repository](https://github.com/allenai/python-package-template):
+To install **iderare-pheno** from source, first clone [the repository](https://github.com/ivanwilliammd/iderare-pheno):
 
 ```bash
-git clone https://github.com/allenai/python-package-template.git
-cd python-package-template
+git clone https://github.com/ivanwilliammd/iderare-pheno.git
+cd iderare-pheno
 ```
 
 Then run
