@@ -1,18 +1,30 @@
-import os
-from datetime import datetime
 
-from pyhpo import stats
-import scipy.cluster
-from matplotlib import pyplot as plt
+from pyhpo import Ontology, HPOSet, Omim, stats
+
+Ontology('phenotype/rawdl_20240310')
+
+# Get Similarity Check of OMIM with HPOSet provided
+def hpo2omim_similarity(diagnosis_sets, hpo_sets, threshold=0.3, differential=100):
+    print('Trying to get similarity check between OMIM and HPOSet')
+    
+    # Convert the OMIM to HPO Set Object
+    print('Convert the OMIM code to HPO set object')
+    omim_object = omim2object(diagnosis_sets)
+    omim_sets = [(d.id, d.name, d.hpo_set()) for d in omim_object]
+
+    # Convert the HPO Code to HPO Set
+    hpo_sets =  hpos2set(hpo_sets)
+    
+    return similarity_linkage(omim_sets, hpo_sets, threshold, differential, linkage='both')
 
 # Threshold similarity
-def threshold_similarity(omim_object, hpo_sets, threshold=0.3, differential=10, linkage='both'):
+def similarity_linkage(omim_sets, hpo_sets, threshold=0.3, differential=10, linkage='both'):
 
     # Split into names, sets
     print('Splitting process done')
-    omim_id = [d[0] for d in omim_object]
-    omim_names = [d[1] for d in omim_object]
-    omim_sets = [d[2] for d in omim_object]
+    omim_id = [d[0] for d in omim_sets]
+    omim_names = [d[1] for d in omim_sets]
+    omim_sets = [d[2] for d in omim_sets]
 
     # Check similarity between phenotype (HPO) and differential diagnosis (OMIM)
     print("Get the similarity score between Patient's phenotype compared to OMIM Object using 'graphic' method and 'bma' combine method.")
@@ -79,41 +91,42 @@ def threshold_similarity(omim_object, hpo_sets, threshold=0.3, differential=10, 
 
     return sorted_similarities, [linkage_all, sorted_object_name, sorted_object_id], [linkage_threshold, sorted_object_name_gt_threshold, sorted_object_id_gt_threshold]
 
-# Get Similarity Check of OMIM with HPOSet provided
-def omim_hpo_similarity(omim_set, hpo_set, threshold=0.3, differential=100):
+
+# Convert OMIM code to OMIM Class Object
+def omim2object(omim_set) :
+    omim_object = []
+    for item in list(set(omim_set)):
+        try : 
+            disease = Omim.get(int(item.strip('OMIM:')))
+            omim_object.append(disease)
+        except:
+            print('OMIM code', item, 'is skipped.')
+            continue
+    
+    return omim_object
+
+# Serialized List of HPO code(s) to HPO Set Object
+def hpos2set(hpo_set) :
+    hpo_object = HPOSet.from_queries(list(set(hpo_set)))
+    return hpo_object
+
+# Give other suggestion for the further potential for clinical diagnosis
+def omim_recommendation(hpo_set, type='gene', threshold=0.3, recommendation=50):
     print('Trying to get similarity check between OMIM and HPOSet')
     
-    # Convert the OMIM to HPO Set Object
-    print('Convert the OMIM code to HPO set object')
-    omim_object = omim_code2object(omim_set)
-    omim_diseases = [(d.id, d.name, d.hpo_set()) for d in omim_object]
-
     # Convert the HPO Code to HPO Set
-    hpo_sets =  hpo_code2set(hpo_set)
-    
-    return threshold_similarity(omim_diseases, hpo_sets, threshold, differential, linkage='both')
+    hpo_sets =  hpos2set(hpo_set)
 
-# Print the dendogram tree
-def linkage_dendogram(linkage, labels, title='Similarity', threshold=0.3, path_to_save=None):
-    if len(linkage) == 0:
-        print("Linkage is empty. The data not possible due to blank linkage information.")
-        return
-    plt.figure(figsize=(20, len(linkage)))
-    scipy.cluster.hierarchy.dendrogram(linkage, labels=labels, show_contracted=True, leaf_font_size=plt.rcParams['font.size'] * 1.5, color_threshold=threshold, orientation='right')
-    plt.title(title, fontsize=plt.rcParams['font.size'] * 2)
-
-    plt.axvline(x=threshold, c='r', lw=2, linestyle='--')
-    plt.text(threshold, 0, 'Similarity Threshold', fontsize=plt.rcParams['font.size'] * 1.5, va='bottom', ha='center', color='r')
-    plt.xlim(0, 1.0)
-    plt.xlabel('Distance', fontsize=plt.rcParams['font.size'] * 2)
-    plt.ylabel('Disease', fontsize=plt.rcParams['font.size'] * 2)
-    plt.tight_layout()
-
-    if not os.path.exists('output'):
-        os.makedirs('output')
-        print(f"Folder output created.")
+    # Instantiate OMIM Directory Data that each disease may contain at least 1 type of Phenotype
+    if type=='gene':
+        omim_set = [[g.id, g.name, g.hpo_set()] for g in Ontology.genes]
+    elif type=='disease':
+        omim_set = [[d.id, d.name, d.hpo_set()] for d in Ontology.omim_diseases]
     else:
-        print(f"Folder output already exists.")
+        print('The type is not recognized, please choose between gene or disease.')
+        return [], [], [], [], []
 
-    path_to_save = 'output/{date_time}_{title}.png'.format(date_time = datetime.now().strftime("%Y%m%d_%H%M%S"), title=title[0:30])
-    plt.savefig(path_to_save)
+    print('Get the similarity check between {} Gene and HPOSet'.format(len(omim_set)))
+
+    # Check similarity between phenotype (HPO) and differential diagnosis (OMIM)
+    return similarity_linkage(omim_set, hpo_sets, threshold, recommendation, linkage='threshold')
