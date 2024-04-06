@@ -1,9 +1,9 @@
 import os
-import pandas as pd
-import scipy.cluster
-
 from datetime import datetime
+
+import pandas as pd
 from matplotlib import pyplot as plt
+import scipy.cluster
 
 # Convert data(s) to dataframe
 def df2tsv(term_id, name, sim_score=None, filename='{}_result'.format(datetime.now().strftime("%Y%m%d_%H%M%S"))):
