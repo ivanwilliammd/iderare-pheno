@@ -9,7 +9,7 @@ This can be used behind other APIs that need to access files agnostic to where t
 
 <p align="center">
     <a href="https://github.com/ivanwilliammd/iderare-pheno/actions">
-        <img alt="CI" src="https://github.com/ivanwilliammd/iderare-pheno/workflows/Main/badge.svg?event=push&branch=main">
+        <img alt="CI" src="https://github.com/ivanwilliammd/iderare-pheno/workflows/Main/badge.svg">
     </a>
     <a href="https://pypi.org/project/iderare_pheno/">
         <img alt="PyPI" src="https://img.shields.io/pypi/v/iderare_pheno">
