@@ -10,12 +10,12 @@ readme = "README.md"
 classifiers = [
     "Intended Audience :: Science/Research",
     "Development Status :: 3 - Alpha",
-    "License :: OSI Approved :: Apache Software License",
+    "License :: OSI Approved :: BSD-3-Clause license",
     "Programming Language :: Python :: 3",
-    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Topic :: Scientific/Engineering :: Phenotype Ontology",
 ]
 authors = [
-    {name = "Ivan William Harsono", email = "contact@ivanwilliammd.org"}
+    {name = "Ivan William Harsono", email = "ivanwilliam.md@gmail.com"}
 ]
 requires-python = ">=3.8"
 dependencies = [
@@ -33,7 +33,7 @@ license = {file = "LICENSE"}
 Homepage = "https://github.com/ivanwilliammd/iderare-pheno"
 Repository = "https://github.com/ivanwilliammd/iderare-pheno"
 Changelog = "https://github.com/ivanwilliammd/iderare-pheno/blob/main/CHANGELOG.md"
-# Documentation = "https://iderare-pheno.readthedocs.io/"
+Documentation = "https://iderare-pheno.readthedocs.io/"
 
 [project.optional-dependencies]
 dev = [
@@ -72,7 +72,7 @@ exclude = [
 include-package-data = true
 
 [tool.setuptools.package-data]
-iderare_pheno = ["py.typed"]
+iderare_pheno = ["phenotype/*"]
 
 [tool.setuptools.dynamic]
 version = {attr = "iderare_pheno.version.VERSION"}
