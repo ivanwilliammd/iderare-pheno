@@ -1,5 +1,4 @@
-import logging
-from pyhpo import Ontology, HPOSet, Omim, stats
+from pyhpo import HPOSet, Omim, Ontology, stats
 
 Ontology('phenotype/rawdl_20240310')
 

@@ -1,8 +1,8 @@
 import os
-from datetime import datetime
-
 import pandas as pd
 import scipy.cluster
+
+from datetime import datetime
 from matplotlib import pyplot as plt
 
 # Convert data(s) to dataframe
