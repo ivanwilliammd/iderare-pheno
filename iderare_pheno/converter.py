@@ -33,7 +33,7 @@ def term2orpha(clinical_data):
     
     if 'SNOMEDCT:' in clinical_data:
         if clinical_data not in snomed2orpha_df['code'].unique() :
-            print('This SNOMEDCT code is not a clinical finding mapped with ORPHA, please check the SNOMED to ORPHA for diagnosis mapping.')
+            print('This SNOMEDCT code is not a clinical finding / disorder mapped with ORPHA, please check the SNOMED to ORPHA for diagnosis mapping.')
             snomed_sugg = snomed2orpha_df[snomed2orpha_df['code'].str.contains(clinical_data.strip('SNOMEDCT:'))]['code'].drop_duplicates()
             print('Sugggestion : It is possible that you mean any of this code:', (', ').join(snomed_sugg.values) , '?\n')
             return []
@@ -144,27 +144,27 @@ def batchconvert(clinical_data_list) :
         
         # Case for SNOMEDCT if exist in HPO, then parse the HPO, else parse the ORPHA --> convert to OMIM
         if 'SNOMEDCT:' in clinical_data:
-            snomed_hpo = hpo_parser(clinical_data)
+            snomed_hpo = term2hpo(clinical_data)
             # If SNOMED is direct phenotype recognized by HPO
             if len(snomed_hpo) > 0:
                 print('SNOMEDCT is recognized as clinical finding, parsing to HPO and add to list')
                 hpo_sets.extend(snomed_hpo)
             else: # If SNOMED is clinical disorders, then convert to ORPHA --> convert to OMIM
                 print('Trying to recognize SNOMEDCT as clinical disorder, parsing to ORPHA and respective OMIM format')
-                snomed_orpha = snomed_orpha_parser(clinical_data)
+                snomed_orpha = term2orpha(clinical_data)
                 # Convert the ORPHA to OMIM
                 for item in snomed_orpha:
-                    orpha_omim = omim_parser(item)
+                    orpha_omim = term2omim(item)
                     diagnosis_sets.extend(orpha_omim)
 
         # Case for ICD-10, lookup the OMIM directly
         elif 'ICD-10:' in clinical_data:
-            icd_omim = omim_parser(clinical_data)
+            icd_omim = term2omim(clinical_data)
             diagnosis_sets.extend(icd_omim)
         
         # Case for ORPHA, lookup the OMIM directly
         elif 'ORPHA:' in clinical_data:
-            orpha_omim = omim_parser(clinical_data)
+            orpha_omim = term2omim(clinical_data)
             diagnosis_sets.extend(orpha_omim)
         
         # Case for OMIM, directly extends the diagnosis_sets
@@ -173,7 +173,7 @@ def batchconvert(clinical_data_list) :
 
         # Case for LOINC, lookup the HPO directly
         elif 'LOINC:' in clinical_data:
-            loinc_hpo = hpo_parser(clinical_data)
+            loinc_hpo = term2hpo(clinical_data)
             hpo_sets.extend(loinc_hpo)
             
         # Case for HPO, directly extends the hpo_sets

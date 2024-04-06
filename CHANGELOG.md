@@ -6,8 +6,10 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## Unreleased
+
+## [v0.2.0](https://github.com/ivanwilliammd/iderare-pheno/releases/tag/v0.2.0) - 2024-04-06
 - Updated dependencies on ```pyproject.toml```
-- Added function file
+- Fully working converter class tested
 
 ## [v0.1.8](https://github.com/ivanwilliammd/iderare-pheno/releases/tag/v0.1.8) - 2024-04-06
 - Added streamlit link and fixed the file structure
