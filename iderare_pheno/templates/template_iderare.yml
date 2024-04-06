@@ -1,0 +1,69 @@
+analysis:
+  # Full Path of trio data
+  data_dir:
+
+  # Note :
+  # 1. Ensure all proband, father, mother saved on the same path
+  # 2. Ensure file name is cleaned .fq.gz, if your file is raw untrimmed fastq, adjust pipeline_template.sh, uncomment Step 0
+  # 3. Insert proband, mother, father file name (not full path) without .fq.gz file
+  # 4. File should be prepared on {data_dir}/input/A_FASTQ
+  # This data source follow the original data sourced from this link : https://www.ncbi.nlm.nih.gov/sra?linkname=bioproject_sra_all&from_uid=1077459
+  proband:
+  mother:
+  father:
+
+  # Gender setting 1=male, 2=female, 0=unknown
+  # Proband Gender
+  proband_gender:
+
+  # Phenotype -9=missing, 0=missing; 1=unaffected; 2=affected
+  proband_phen:
+  mother_phen:
+  father_phen:
+
+  # HPO IDs of patient
+  hpo_ids:
+
+  # Library Name - Any kind of sequencing method (e.g. AgilentV6)
+  library:
+  # Method - Any kind of sequencing method (e.g. DNBSeq)
+  method:
+
+setup:
+  # deep variant version #1.5.0 - tested for GPU <8GB | v1.6.0 need minimum GPU memory of 16 GB
+  dv_version:
+
+  # glnexus and tiddit docker version
+  glnexus_version:
+  tiddit_version:
+
+  # deep variant model (WES/WGS)
+  dv_model:
+
+  # max memory allowed (G = Gigabyte)
+  max_mem:
+
+  # refseq directory (full folder), assuming you save it on Downloads/Database
+  ref_dir:
+  # refseq fasta file name (file name)
+  ref_fasta:
+
+  # SnpEff data directory & version
+  snpEff_dir:
+  snpEff_ver:
+
+  # Exomiser data directory & version
+  exomiser_dir:
+  exomiser_data_ver:
+
+  #dbNSFP file
+  dbNSFP_file: /home/ivanwilliamharsono/Downloads/Database/dbNSFPv4.5a_custombuild.gz
+
+  #dbSNP file
+  dbSNP_file: /home/ivanwilliamharsono/Downloads/Database/Homo_sapiens_assembly38.dbsnp156_snpsift.fixed.vcf.gz
+
+  #ClinVar file
+  ClinVar_file: /home/ivanwilliamharsono/Downloads/Database/clinvar_20240215.vcf.gz
+
+  # SnpSift adjuster
+  chr_rename: /home/ivanwilliamharsono/Downloads/IDeRare/convert/vcf_rename.chrnames

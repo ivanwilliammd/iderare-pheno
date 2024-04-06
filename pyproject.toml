@@ -19,7 +19,13 @@ authors = [
 ]
 requires-python = ">=3.8"
 dependencies = [
-  # Add your own dependencies here
+  "pandas",
+  "numpy",
+  "matplotlib",
+  "scipy",
+  "hpo3",
+  "scikit-learn",
+  "pyyaml"
 ]
 license = {file = "LICENSE"}
 
