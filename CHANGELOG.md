@@ -7,6 +7,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## Unreleased
 
+## [v0.3.4](https://github.com/ivanwilliammd/iderare-pheno/releases/tag/v0.3.4) - 2024-04-07
+- Correction to .toml file for the license type
+
 ## [v0.3.3](https://github.com/ivanwilliammd/iderare-pheno/releases/tag/v0.3.3) - 2024-04-07
 - Updated phenotype data to .toml for release together with PyPi package
 
