@@ -19,7 +19,7 @@ def result_to_tsv(term_id, name, sim_score=None, filename='{}_result'.format(dat
     return df
 
 # Convert OMIM code to OMIM Class Object
-def omim_code2object(omim_set) :
+def omim2object(omim_set) :
     omim_object = []
     for item in list(set(omim_set)):
         try : 
@@ -32,6 +32,6 @@ def omim_code2object(omim_set) :
     return omim_object
 
 # Serialized List of HPO code(s) to HPO Set Object
-def hpo_code2set(hpo_set) :
+def hpos2set(hpo_set) :
     hpo_object = HPOSet.from_queries(list(set(hpo_set)))
     return hpo_object
