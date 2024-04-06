@@ -1,4 +1,3 @@
-import os
 import pandas as pd
 
 # Declare the folder path for phenotype data source
