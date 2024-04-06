@@ -68,11 +68,33 @@ exclude = [
     "scripts*"
 ]
 
+
 [tool.setuptools]
 include-package-data = true
 
 [tool.setuptools.package-data]
-iderare_pheno = ["phenotype/*"]
+iderare_pheno = [
+    "phenotype/*",
+    "phenotype/*/*",
+    "phenotype/*/*/*",
+    "phenotype/*/*/*/*",
+    "phenotype/*/*/*/*/*",
+    "phenotype/*/*/*/*/*/*",
+    "phenotype/*/*/*/*/*/*/*",
+    "phenotype/*/*/*/*/*/*/*/*",
+    "phenotype/*/*/*/*/*/*/*/*/*",
+    "phenotype",
+    "templates/*",
+    "templates/*/*",
+    "templates/*/*/*",
+    "templates/*/*/*/*",
+    "templates/*/*/*/*/*",
+    "templates/*/*/*/*/*/*",
+    "templates/*/*/*/*/*/*/*",
+    "templates/*/*/*/*/*/*/*/*",
+    "templates/*/*/*/*/*/*/*/*/*",
+    "templates"
+]
 
 [tool.setuptools.dynamic]
 version = {attr = "iderare_pheno.version.VERSION"}
@@ -110,7 +132,7 @@ target-version = "py39"
 
 [tool.mypy]
 ignore_missing_imports = true
-no_site_packages = true
+no_site_packages = false
 check_untyped_defs = true
 
 [[tool.mypy.overrides]]
