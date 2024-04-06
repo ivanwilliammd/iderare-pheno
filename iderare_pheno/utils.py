@@ -35,9 +35,9 @@ def linkage_dendogram(linkage, labels, title='Similarity', threshold=0.3, path_t
 
     if not os.path.exists('output'):
         os.makedirs('output')
-        print(f"Folder output created.")
+        print("Folder output created.")
     else:
-        print(f"Folder output already exists.")
+        print("Folder output already exists.")
 
     path_to_save = 'output/{date_time}_{title}.png'.format(date_time = datetime.now().strftime("%Y%m%d_%H%M%S"), title=title[0:30])
     plt.savefig(path_to_save)

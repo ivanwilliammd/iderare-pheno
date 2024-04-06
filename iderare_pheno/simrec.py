@@ -1,4 +1,4 @@
-
+import logging
 from pyhpo import Ontology, HPOSet, Omim, stats
 
 Ontology('phenotype/rawdl_20240310')
@@ -99,8 +99,8 @@ def omim2object(omim_set) :
         try : 
             disease = Omim.get(int(item.strip('OMIM:')))
             omim_object.append(disease)
-        except:
-            print('OMIM code', item, 'is skipped.')
+        except Exception as e:
+            print(f"Failed to process OMIM code {item}: {str(e)}")
             continue
     
     return omim_object
