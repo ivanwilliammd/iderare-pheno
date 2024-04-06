@@ -57,13 +57,13 @@ setup:
   exomiser_data_ver:
 
   #dbNSFP file
-  dbNSFP_file: /home/ivanwilliamharsono/Downloads/Database/dbNSFPv4.5a_custombuild.gz
+  dbNSFP_file:
 
   #dbSNP file
-  dbSNP_file: /home/ivanwilliamharsono/Downloads/Database/Homo_sapiens_assembly38.dbsnp156_snpsift.fixed.vcf.gz
+  dbSNP_file:
 
   #ClinVar file
-  ClinVar_file: /home/ivanwilliamharsono/Downloads/Database/clinvar_20240215.vcf.gz
+  ClinVar_file:
 
   # SnpSift adjuster
-  chr_rename: /home/ivanwilliamharsono/Downloads/IDeRare/convert/vcf_rename.chrnames
+  chr_rename:

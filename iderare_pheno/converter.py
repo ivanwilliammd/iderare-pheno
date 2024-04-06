@@ -2,7 +2,7 @@ import os
 import pandas as pd
 
 # Declare the folder path for phenotype data source
-phenotype_folder = os.path.join(os.getcwd(), 'phenotype', 'subset')
+phenotype_folder = 'phenotype/subset'
 
 # Declare database useds for mapping
 icd10omim = 'icd102omim_subset.tsv'
@@ -19,26 +19,26 @@ yaml_file = 'iderare.yaml'
 clinical_data = 'clinical_data.txt'
 
 # Read the clinical data and parse the data
-icd10omim_df = pd.read_csv(os.path.join(phenotype_folder, icd10omim), sep='\t')
-loinc2hpo_df = pd.read_csv(os.path.join(phenotype_folder, loinc2hpo), sep='\t')
-orpha2omim_df = pd.read_csv(os.path.join(phenotype_folder, orpha2omim), sep='\t')
-omim2hpo_df = pd.read_csv(os.path.join(phenotype_folder, omim2hpo), sep='\t')
-snomed2hpo_df = pd.read_csv(os.path.join(phenotype_folder, snomed2hpo), sep='\t')
-snomed2orpha_df = pd.read_csv(os.path.join(phenotype_folder, snomed2orpha), sep='\t')
+icd10omim_df = pd.read_csv(phenotype_folder+'/'+icd10omim, sep='\t')
+loinc2hpo_df = pd.read_csv(phenotype_folder+'/'+loinc2hpo, sep='\t')
+orpha2omim_df = pd.read_csv(phenotype_folder+'/'+orpha2omim, sep='\t')
+omim2hpo_df = pd.read_csv(phenotype_folder+'/'+omim2hpo, sep='\t')
+snomed2hpo_df = pd.read_csv(phenotype_folder+'/'+snomed2hpo, sep='\t')
+snomed2orpha_df = pd.read_csv(phenotype_folder+'/'+snomed2orpha, sep='\t')
 
 
 # Convert SNOMED to ORPHA First
-def snomed_orpha_parser(clinical_data, df):
+def term2orpha(clinical_data):
     print('Trying to parse ORPHA from SNOMEDCT', clinical_data)
     
     if 'SNOMEDCT:' in clinical_data:
-        if clinical_data not in df['code'].unique() :
+        if clinical_data not in snomed2orpha_df['code'].unique() :
             print('This SNOMEDCT code is not a clinical finding mapped with ORPHA, please check the SNOMED to ORPHA for diagnosis mapping.')
-            snomed_sugg = df[df['code'].str.contains(clinical_data.strip('SNOMEDCT:'))]['code'].drop_duplicates()
+            snomed_sugg = snomed2orpha_df[snomed2orpha_df['code'].str.contains(clinical_data.strip('SNOMEDCT:'))]['code'].drop_duplicates()
             print('Sugggestion : It is possible that you mean any of this code:', (', ').join(snomed_sugg.values) , '?\n')
             return []
         else : 
-            snomed_orpha = df[df['code'] == clinical_data]['orphanet_map'].to_list()
+            snomed_orpha = snomed2orpha_df[snomed2orpha_df['code'] == clinical_data]['orphanet_map'].to_list()
             print('Parsing of', clinical_data, 'successful with result of :', len(snomed_orpha), ' ORPHA code : ', (', ').join(snomed_orpha), '\n')
             return snomed_orpha
         
@@ -48,7 +48,7 @@ def snomed_orpha_parser(clinical_data, df):
         return []
     
 # HPO Parser for Clinical Finding Related Terminology such as SNOMED, LOINC
-def hpo_parser(clinical_data, df):    
+def term2hpo(clinical_data):    
     print('Trying to parse HPO from terminology', clinical_data)
     
     # LOINC case
@@ -60,18 +60,18 @@ def hpo_parser(clinical_data, df):
             interpretation = loinc_split[1]
             
             # Handling if LOINC code not found in the database
-            if loinc not in df['loinc'].unique() :
+            if loinc not in loinc2hpo_df['loinc'].unique() :
                 print('LOINC data is not found in the database, please check the exact LOINC code.')
-                loinc_sugg = df[df['loinc'].str.contains(loinc.strip('LOINC:'))]['loinc'].drop_duplicates()
+                loinc_sugg = loinc2hpo_df[loinc2hpo_df['loinc'].str.contains(loinc.strip('LOINC:'))]['loinc'].drop_duplicates()
                 print('Did you mean any of this code:', (', ').join(loinc_sugg.values) , '?\n')
                 return []
             
-            loinc_hpo = df[df['loinc'] == loinc]
+            loinc_hpo = loinc2hpo_df[loinc2hpo_df['loinc'] == loinc]
 
             # Handling if interpretation not suitable for the LOINC code
             if interpretation not in loinc_hpo['interpretation'].unique() :
                 print('Interpretation is invalid, please check if you have used correct interpretation.')
-                interpretation_sugg = df[df['loinc']==loinc]['interpretation'].drop_duplicates()
+                interpretation_sugg = loinc2hpo_df[loinc2hpo_df['loinc']==loinc]['interpretation'].drop_duplicates()
                 print('Available interpretation for code', loinc, ' : ', (' or ').join(interpretation_sugg.values) , '\n')
                 return []
             
@@ -85,13 +85,13 @@ def hpo_parser(clinical_data, df):
         
     # SNOMEDCT case
     elif 'SNOMEDCT:' in clinical_data:
-        if clinical_data not in df['SNOMED_CT_ID'].unique() :
+        if clinical_data not in snomed2hpo_df['SNOMED_CT_ID'].unique() :
             print('This SNOMEDCT code is not a clinical finding mapped with HPO, please check the SNOMED to OMIM for diagnosis mapping.')
-            snomed_sugg = df[df['SNOMED_CT_ID'].str.contains(clinical_data.strip('SNOMEDCT:'))]['SNOMED_CT_ID'].drop_duplicates()
+            snomed_sugg = snomed2hpo_df[snomed2hpo_df['SNOMED_CT_ID'].str.contains(clinical_data.strip('SNOMEDCT:'))]['SNOMED_CT_ID'].drop_duplicates()
             print('Sugggestion : It is possible that you mean any of this code:', (', ').join(snomed_sugg.values) , '?\n')
             return []
         else : 
-            snomed_hpo = df[df['SNOMED_CT_ID'] == clinical_data]['HPO_ID'].to_list()
+            snomed_hpo = snomed2hpo_df[snomed2hpo_df['SNOMED_CT_ID'] == clinical_data]['HPO_ID'].to_list()
             print('Parsing of', clinical_data, 'successful with result of :', len(snomed_hpo), ' HPO code : ', (', ').join(snomed_hpo), '\n')
             return list(snomed_hpo)
         
@@ -102,30 +102,30 @@ def hpo_parser(clinical_data, df):
         return []
     
 # OMIM Parser used for diagnosis related terminology ICD-10, ORPHA, SNOMEDCT to be translated to OMIM
-def omim_parser(clinical_data,df):
+def term2omim(clinical_data):
     print('Trying to parse OMIM from terminology', clinical_data)
 
     # ICD-10 case
     if 'ICD-10:' in clinical_data:
-        if clinical_data not in df['ICD10'].unique() :
+        if clinical_data not in icd10omim_df['ICD10'].unique() :
             print('ICD-10 data is not found in the database, please check the exact ICD-10 code.')
-            icd_sugg = df[df['ICD10'].str.contains(clinical_data.strip('ICD-10:'))]['ICD10'].drop_duplicates()
+            icd_sugg = icd10omim_df[icd10omim_df['ICD10'].str.contains(clinical_data.strip('ICD-10:'))]['ICD10'].drop_duplicates()
             print('Did you mean any of this code:', (', ').join(icd_sugg.values) , '?\n')
             return []
         else : 
-            icd_omim = df[df['ICD10'] == clinical_data]['OMIM'].to_list()
+            icd_omim = icd10omim_df[icd10omim_df['ICD10'] == clinical_data]['OMIM'].to_list()
             print('Parsing of', clinical_data, 'successful with result of :', len(icd_omim), ' OMIM code : ', (', ').join(icd_omim), '\n')
             return icd_omim
         
     # ORPHA case
     elif 'ORPHA:' in clinical_data:
-        if clinical_data not in df['ORPHA'].unique() :
+        if clinical_data not in orpha2omim_df['ORPHA'].unique() :
             print('ORPHA data is not found in the database, please check the exact ORPHA code.')
-            orpha_sugg = df[df['ORPHA'].str.contains(clinical_data.strip('ORPHA:'))]['ORPHA'].drop_duplicates()
+            orpha_sugg = orpha2omim_df[orpha2omim_df['ORPHA'].str.contains(clinical_data.strip('ORPHA:'))]['ORPHA'].drop_duplicates()
             print('Did you mean any of this code:', (', ').join(orpha_sugg.values) , '?\n')
             return []
         else : 
-            orpha_hpo = df[df['ORPHA'] == clinical_data]['OMIM'].to_list()
+            orpha_hpo = orpha2omim_df[orpha2omim_df['ORPHA'] == clinical_data]['OMIM'].to_list()
             print('Parsing of', clinical_data, 'successful with result of :', len(orpha_hpo), ' OMIM code : ', (', ').join(orpha_hpo), '\n')
             return orpha_hpo
     
@@ -135,7 +135,7 @@ def omim_parser(clinical_data,df):
         return []
     
 # Automatic parsing
-def phenotype_diagnosis_split(clinical_data_list) : 
+def batchconvert(clinical_data_list) : 
     hpo_sets = []
     diagnosis_sets = []
 
@@ -144,27 +144,27 @@ def phenotype_diagnosis_split(clinical_data_list) :
         
         # Case for SNOMEDCT if exist in HPO, then parse the HPO, else parse the ORPHA --> convert to OMIM
         if 'SNOMEDCT:' in clinical_data:
-            snomed_hpo = hpo_parser(clinical_data, snomed2hpo_df)
+            snomed_hpo = hpo_parser(clinical_data)
             # If SNOMED is direct phenotype recognized by HPO
             if len(snomed_hpo) > 0:
                 print('SNOMEDCT is recognized as clinical finding, parsing to HPO and add to list')
                 hpo_sets.extend(snomed_hpo)
             else: # If SNOMED is clinical disorders, then convert to ORPHA --> convert to OMIM
                 print('Trying to recognize SNOMEDCT as clinical disorder, parsing to ORPHA and respective OMIM format')
-                snomed_orpha = snomed_orpha_parser(clinical_data, snomed2orpha_df)
+                snomed_orpha = snomed_orpha_parser(clinical_data)
                 # Convert the ORPHA to OMIM
                 for item in snomed_orpha:
-                    orpha_omim = omim_parser(item, orpha2omim_df)
+                    orpha_omim = omim_parser(item)
                     diagnosis_sets.extend(orpha_omim)
 
         # Case for ICD-10, lookup the OMIM directly
         elif 'ICD-10:' in clinical_data:
-            icd_omim = omim_parser(clinical_data, icd10omim_df)
+            icd_omim = omim_parser(clinical_data)
             diagnosis_sets.extend(icd_omim)
         
         # Case for ORPHA, lookup the OMIM directly
         elif 'ORPHA:' in clinical_data:
-            orpha_omim = omim_parser(clinical_data, orpha2omim_df)
+            orpha_omim = omim_parser(clinical_data)
             diagnosis_sets.extend(orpha_omim)
         
         # Case for OMIM, directly extends the diagnosis_sets
@@ -173,7 +173,7 @@ def phenotype_diagnosis_split(clinical_data_list) :
 
         # Case for LOINC, lookup the HPO directly
         elif 'LOINC:' in clinical_data:
-            loinc_hpo = hpo_parser(clinical_data, loinc2hpo_df)
+            loinc_hpo = hpo_parser(clinical_data)
             hpo_sets.extend(loinc_hpo)
             
         # Case for HPO, directly extends the hpo_sets

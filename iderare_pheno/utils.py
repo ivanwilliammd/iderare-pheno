@@ -5,7 +5,7 @@ import pandas as pd
 import numpy as np
 from pyhpo import Ontology, HPOSet, Omim
 
-ontology = Ontology(os.path.join(os.getcwd(), 'phenotype', 'rawdl_20240310'))
+ontology = Ontology('phenotype/rawdl_20240310')
 
 # Convert data(s) to dataframe
 def result_to_tsv(term_id, name, sim_score=None, filename='{}_result'.format(datetime.now().strftime("%Y%m%d_%H%M%S"))):
