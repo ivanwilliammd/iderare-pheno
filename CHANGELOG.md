@@ -7,6 +7,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## Unreleased
 
+## [v0.3.2](https://github.com/ivanwilliammd/iderare-pheno/releases/tag/v0.3.2) - 2024-04-07
+- Refactored styling
+
 ## [v0.3.1](https://github.com/ivanwilliammd/iderare-pheno/releases/tag/v0.3.1) - 2024-04-07
 - Fixing of utils list2tsv function
 - Fix relative path of the data folder

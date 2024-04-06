@@ -1,4 +1,5 @@
 import os
+
 from pyhpo import HPOSet, Omim, Ontology, stats
 
 Ontology(os.path.join(os.path.dirname(__file__), "phenotype", "data"))
