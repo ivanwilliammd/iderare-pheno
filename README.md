@@ -1,9 +1,20 @@
-# [iderare-pheno](https://iderare-pheno.readthedocs.io/)
+# [IDeRare-pheno](https://iderare-pheno.readthedocs.io/)
 
 <!-- start tagline -->
 
-A file utility library that provides a unified, simple interface for accessing both local and remote files.
-This can be used behind other APIs that need to access files agnostic to where they are located.
+IDeRare or "Indonesia Exome Rare Disease Variant Discovery Pipeline" is simple and ready to use variant discovery pipeline to discover rare disease variants from exome sequencing data.
+
+Interactive Webapps Implementation of **iderare_pheno.py** hosted at [Streamlit](https://bioinformatics-ivanwilliamharsono.streamlitapp.com/IDeRare_Pheno)
+
+This script is recommended if you would like to do conversion, linkage analysis, similarity scoring, and gene-disease recommendation based on the phenotype data provided at [clinical_data.txt](clinical_data.txt). Full feature : 
+1. Convert the phenotype data to HPO code (accept mixed SNOMED, LOINC, and HPO code)
+2. Similarity scoring of differential diagnosis
+3. Linkage analysis of differential diagnosis (accept mixed SNOMED, ICD-10, ORPHA, OMIM code), include dendrogram tree visualization.
+    - This should help clinician to **systematically doing work-up and excluding similar diagnosis together** based on the patient\'s phenotype.
+4. Gene and disease recommendation based on the phenotype data similarity scoring between **phenotype** and OMIM gene and disease databank.
+5. Linkage analysis of recommended causative gene and disease based on phenotype data (include dendrogram tree visualization).
+    - This should help clinician to **explore / enrich their differential diagnosis** based on the patient\'s phenotype.
+6. Example of the clinical data provided at [Clinical Information Example section](#clinical-information-example)
 
 <!-- end tagline -->
 
