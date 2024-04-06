@@ -23,8 +23,8 @@ from iderare_pheno import VERSION, VERSION_SHORT  # noqa: E402
 # -- Project information -----------------------------------------------------
 
 project = "iderare-pheno"
-copyright = f"{datetime.today().year}, Allen Institute for Artificial Intelligence"
-author = "Allen Institute for Artificial Intelligence"
+copyright = f"{datetime.today().year}, Ivan William Harsono"
+author = "Ivan William Harsono"
 version = VERSION_SHORT
 release = VERSION
 

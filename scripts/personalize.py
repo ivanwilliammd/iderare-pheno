@@ -40,7 +40,7 @@ GITIGNORE_LIST = [
 ]
 
 REPO_NAME_TO_REPLACE = "python-package-template"
-BASE_URL_TO_REPLACE = "https://github.com/allenai/python-package-template"
+BASE_URL_TO_REPLACE = "https://github.com/ivanwilliammd/python-package-template"
 
 
 @click.command(
@@ -51,7 +51,7 @@ BASE_URL_TO_REPLACE = "https://github.com/allenai/python-package-template"
 )
 @click.option(
     "--github-org",
-    prompt="GitHub organization or user (e.g. 'allenai')",
+    prompt="GitHub organization or user (e.g. 'ivanwilliammd')",
     help="The name of your GitHub organization or user.",
 )
 @click.option(

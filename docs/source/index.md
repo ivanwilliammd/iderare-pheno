@@ -15,7 +15,7 @@ overview
 
 CHANGELOG
 CONTRIBUTING
-License <https://raw.githubusercontent.com/allenai/iderare-pheno/main/LICENSE>
+License <https://raw.githubusercontent.com/ivanwilliammd/iderare-pheno/main/LICENSE>
 GitHub Repository <https://github.com/ivanwilliammd/iderare-pheno>
 ```
 
