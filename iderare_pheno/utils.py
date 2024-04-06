@@ -7,7 +7,7 @@ from matplotlib import pyplot as plt
 
 
 # Convert data(s) to dataframe
-def df2tsv(
+def list2tsv(
     term_id,
     name,
     sim_score=None,
@@ -23,8 +23,8 @@ def df2tsv(
     return df
 
 
-# Print the dendogram tree
-def linkage_dendogram(linkage, labels, title="Similarity", threshold=0.3, path_to_save=None):
+# Print the dendrogram tree
+def linkage_dendrogram(linkage, labels, title="Similarity", threshold=0.3, path_to_save=None):
     if len(linkage) == 0:
         print("Linkage is empty. The data not possible due to blank linkage information.")
         return
@@ -60,7 +60,8 @@ def linkage_dendogram(linkage, labels, title="Similarity", threshold=0.3, path_t
     else:
         print("Folder output already exists.")
 
-    path_to_save = "output/{date_time}_{title}.png".format(
-        date_time=datetime.now().strftime("%Y%m%d_%H%M%S"), title=title[0:30]
-    )
+    if path_to_save is None:
+        path_to_save = "output/{date_time}_{title}.png".format(
+            date_time=datetime.now().strftime("%Y%m%d_%H%M%S"), title=title[0:30]
+        )
     plt.savefig(path_to_save)
