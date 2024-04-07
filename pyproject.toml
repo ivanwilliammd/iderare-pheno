@@ -134,6 +134,7 @@ target-version = "py39"
 ignore_missing_imports = true
 no_site_packages = false
 check_untyped_defs = true
+mypy_include = ["types-PyYAML"]
 
 [[tool.mypy.overrides]]
 module = "tests.*"
