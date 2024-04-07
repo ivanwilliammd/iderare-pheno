@@ -1,0 +1,38 @@
+rank	id	name	score
+1	227810	Fanconi-Bickel syndrome	0.3851177990436554
+2	611881	Glycogen storage disease XII	0.3723735809326172
+3	603902	Thalassemia-beta, dominant inclusion-body	0.3528570234775543
+4	232500	Glycogen storage disease IV	0.3311641216278076
+5	613027	Glycogen storage disease IXc	0.3222183883190155
+6	232700	Glycogen storage disease VI	0.32113826274871826
+7	615895	Polyglucosan body myopathy 1 with or without immunodeficiency	0.3190052807331085
+8	610539	Gaucher disease, atypical	0.3134368658065796
+9	230800	Gaucher disease, type I	0.2948063015937805
+10	257220	Niemann-pick disease, type C1	0.2887139916419983
+11	231000	Gaucher disease, type III	0.28795626759529114
+12	232200	Glycogen storage disease Ia	0.2799232304096222
+13	230900	Gaucher disease, type II	0.2669340968132019
+14	608013	Gaucher disease, perinatal lethal	0.2648431360721588
+15	261750	Glycogen storage disease type IXb	0.25858327746391296
+16	232220	Glycogen storage disease Ib	0.25592923164367676
+17	607625	Niemann-pick disease, type C2	0.2328203171491623
+18	232800	Glycogen storage disease VII	0.21963520348072052
+19	232240	Glycogen storage disease Ic	0.21480496227741241
+20	306000	Glycogen storage disease, type IXa1	0.2114570587873459
+21	231005	Gaucher disease, type IIIC	0.19200804829597473
+22	240600	Glycogen storage disease 0, liver	0.18373343348503113
+23	232300	Glycogen storage disease II	0.17807894945144653
+24	232400	Glycogen storage disease III	0.17743338644504547
+25	612933	Glycogen storage disease XI	0.16075573861598969
+26	612932	Glycogen storage disease XIII	0.12607280910015106
+27	232600	Glycogen storage disease V	0.11939386278390884
+28	263570	Polyglucosan body neuropathy, adult form	0.11525966227054596
+29	261670	Phosphoglycerate mutase, muscle, deficiency of	0.10096176713705063
+30	611556	Glycogen storage disease 0, muscle	0.10010755807161331
+31	613507	Glycogen storage disease XV	0.08989541977643967
+32	300653	Phosphoglycerate kinase 1 deficiency	0.08972006291151047
+33	616199	Polyglucosan body myopathy 2	0.08133861422538757
+34	614128	Lactate dehydrogenase B deficiency	0.07455503195524216
+35	613985	BETA-THALASSEMIA	0.07443328201770782
+36	300257	Danon disease	0.06328766793012619
+37	300559	Muscle glycogenosis, X-linked	0.06328236311674118

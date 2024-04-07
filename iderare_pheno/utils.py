@@ -3,7 +3,21 @@ from datetime import datetime
 
 import pandas as pd
 import scipy.cluster
+import yaml
 from matplotlib import pyplot as plt
+
+iderare_template = os.path.join(os.path.dirname(__file__), "templates", "template_iderare.yml")
+
+
+# Fill template_iderare.yml with the given phenotype
+def generate_yml(hpo_sets, filename="iderare.yml"):
+    with open(iderare_template, "r") as f:
+        y = yaml.safe_load(f)
+        y["analysis"]["hpo_ids"] = hpo_sets
+
+    with open(filename, "w+") as o:
+        yaml.dump(y, o, default_flow_style=False, sort_keys=False)
+        print("File {} has been created.".format(filename))
 
 
 # Convert data(s) to dataframe
