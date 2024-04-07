@@ -20,7 +20,7 @@
 
 IDeRare or "Indonesia Exome Rare Disease Variant Discovery Pipeline" is a simple and ready to use variant discovery pipeline to discover rare disease variants from exome sequencing data. 
 
-This repository is **the first part** of IDeRare workflow for **phenotype analysis**. For complete information, kindly refer to [IDeRare Github repository](https://github.com/ivanwilliammd/IDeRare).
+This repository is **the first part** of IDeRare workflow for **phenotype analysis**. For complete pipeline for _**phenotype-genotype analysis**_, kindly refer to [IDeRare Github repository](https://github.com/ivanwilliammd/IDeRare).
 
 ## Authored by 
 Ivan William Harsono<sup>a</sup>, Yulia Ariani<sup>b</sup>, Beben Benyamin<sup>c,d,e</sup>, Fadilah Fadilah<sup>f,g</sup>, Dwi Ari Pujianto<sup>b</sup>, Cut Nurul Hafifah<sup>h</sup>
