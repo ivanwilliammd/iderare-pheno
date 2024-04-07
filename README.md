@@ -1,6 +1,22 @@
 # [IDeRare-Pheno](https://iderare-pheno.readthedocs.io/)
 
-<!-- start tagline -->
+<p align="center">
+    <a href="https://github.com/ivanwilliammd/iderare-pheno/actions">
+        <img alt="CI" src="https://github.com/ivanwilliammd/iderare-pheno/workflows/Main/badge.svg">
+    </a>
+    <a href="https://pypi.org/project/iderare_pheno/">
+        <img alt="PyPI" src="https://img.shields.io/pypi/v/iderare_pheno">
+    </a>
+    <a href="https://iderare-pheno.readthedocs.io/en/latest/?badge=latest">
+        <img src="https://readthedocs.org/projects/iderare-pheno/badge/?version=latest" alt="Documentation Status" />
+    </a>
+    <a href="https://github.com/ivanwilliammd/iderare-pheno/blob/main/LICENSE">
+        <img alt="License" src="https://img.shields.io/github/license/ivanwilliammd/iderare-pheno.svg?color=blue&cachedrop">
+    </a>
+    <a href="https://bioinformatics-ivanwilliamharsono.streamlit.app/IDeRare_Pheno">
+        <img alt="Streamlit" src="https://static.streamlit.io/badges/streamlit_badge_black_white.svg">
+    <br/>
+</p>
 
 IDeRare or "Indonesia Exome Rare Disease Variant Discovery Pipeline" is a simple and ready to use variant discovery pipeline to discover rare disease variants from exome sequencing data. 
 
@@ -20,27 +36,6 @@ Ivan William Harsono<sup>a</sup>, Yulia Ariani<sup>b</sup>, Beben Benyamin<sup>c
 
 
 **Note:** Currently IDeRare paper is being considered journal submission. The citation will be updated once the paper is published.
-
-
-<!-- end tagline -->
-
-<p align="center">
-    <a href="https://github.com/ivanwilliammd/iderare-pheno/actions">
-        <img alt="CI" src="https://github.com/ivanwilliammd/iderare-pheno/workflows/Main/badge.svg">
-    </a>
-    <a href="https://pypi.org/project/iderare_pheno/">
-        <img alt="PyPI" src="https://img.shields.io/pypi/v/iderare_pheno">
-    </a>
-    <a href="https://iderare-pheno.readthedocs.io/en/latest/?badge=latest">
-        <img src="https://readthedocs.org/projects/iderare-pheno/badge/?version=latest" alt="Documentation Status" />
-    </a>
-    <a href="https://github.com/ivanwilliammd/iderare-pheno/blob/main/LICENSE">
-        <img alt="License" src="https://img.shields.io/github/license/ivanwilliammd/iderare-pheno.svg?color=blue&cachedrop">
-    </a>
-    <a href="https://bioinformatics-ivanwilliamharsono.streamlit.app/IDeRare_Pheno">
-        <img alt="Streamlit" src="https://static.streamlit.io/badges/streamlit_badge_black_white.svg">
-    <br/>
-</p>
 
 ## Quick links
 
