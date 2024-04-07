@@ -42,6 +42,7 @@ Ivan William Harsono<sup>a</sup>, Yulia Ariani<sup>b</sup>, Beben Benyamin<sup>c
 - [Documentation](https://iderare-pheno.readthedocs.io/)
 - [PyPI Package](https://pypi.org/project/iderare-pheno/)
 - [License](https://github.com/ivanwilliammd/iderare-pheno/blob/main/LICENSE)
+- [Interactive Playbook Example](https://github.com/ivanwilliammd/iderare-pheno/blob/main/Playbook.ipynb)
 - Interactive Webapps Implementation of at [Streamlit](https://bioinformatics-ivanwilliamharsono.streamlitapp.com/IDeRare_Pheno)
 
 
@@ -97,13 +98,15 @@ pip install -e .
 
 <!-- end install source -->
 
-## Usage
+## Importing the library
 
 ```python
 from iderare_pheno.converter import term2omim, term2orpha, term2hpo, batchconvert
 from iderare_pheno.simrec import hpo2omim_similarity, omim_recommendation, hpo2name
-from iderare_pheno.utils import linkage_dendrogram, list2tsv
+from iderare_pheno.utils import linkage_dendrogram, list2tsv, generate_yml
 ```
+As the complete readthedocs.io is still ongoing, please kindly refer to this [Interactive Playbook Example](https://github.com/ivanwilliammd/iderare-pheno/blob/main/Playbook.ipynb)
+
 
 ## Team
 
