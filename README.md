@@ -1,10 +1,5 @@
 # [IDeRare-Pheno](https://iderare-pheno.readthedocs.io/)
 
-<!-- start tagline -->
-
-IDeRare or "Indonesia Exome Rare Disease Variant Discovery Pipeline" is simple and ready to use variant discovery pipeline to discover rare disease variants from exome sequencing data.
-<!-- end tagline -->
-
 <p align="center">
     <a href="https://github.com/ivanwilliammd/iderare-pheno/actions">
         <img alt="CI" src="https://github.com/ivanwilliammd/iderare-pheno/workflows/Main/badge.svg">
@@ -23,11 +18,31 @@ IDeRare or "Indonesia Exome Rare Disease Variant Discovery Pipeline" is simple a
     <br/>
 </p>
 
+IDeRare or "Indonesia Exome Rare Disease Variant Discovery Pipeline" is a simple and ready to use variant discovery pipeline to discover rare disease variants from exome sequencing data. 
+
+This repository is **the first part** of IDeRare workflow for **phenotype analysis**. For complete pipeline for _**phenotype-genotype analysis**_, kindly refer to [IDeRare Github repository](https://github.com/ivanwilliammd/IDeRare).
+
+## Authored by 
+Ivan William Harsono<sup>a</sup>, Yulia Ariani<sup>b</sup>, Beben Benyamin<sup>c,d,e</sup>, Fadilah Fadilah<sup>f,g</sup>, Dwi Ari Pujianto<sup>b</sup>, Cut Nurul Hafifah<sup>h</sup>
+
+<sup>a</sup>Doctoral Program in Biomedical Sciences, Faculty of Medicine, Universitas Indonesia, Jakarta, Indonesia.<br> 
+<sup>b</sup>Department of Medical Biology, Faculty of Medicine, Universitas Indonesia, Jakarta, Indonesia.<br> 
+<sup>c</sup>Australian Centre for Precision Health, University of South Australia, Adelaide, SA, 5000, Australia. <br>
+<sup>d</sup>UniSA Allied Health and Human Performance, University of South Australia, Adelaide, SA, 5000, Australia. <br>
+<sup>e</sup>South Australian Health and Medical Research Institute (SAHMRI), University of South Australia, Adelaide, SA, 5000, Australia. <br>
+<sup>f</sup>Department of Medical Chemistry, Faculty of Medicine, Universitas Indonesia, Jalan Salemba Raya number 4, Jakarta, 10430, Indonesia.<br>
+<sup>g</sup>Bioinformatics Core Facilities - IMERI, Faculty of Medicine, Universitas Indonesia, Jalan Salemba Raya number 6, Jakarta, 10430, Indonesia .<br>
+<sup>h</sup>Department of Child Health, Dr. Cipto Mangunkusumo Hospital, Faculty of Medicine, University of Indonesia, Jakarta, Indonesia. <br>
+
+
+**Note:** Currently IDeRare paper is being considered journal submission. The citation will be updated once the paper is published.
+
 ## Quick links
 
 - [Documentation](https://iderare-pheno.readthedocs.io/)
 - [PyPI Package](https://pypi.org/project/iderare-pheno/)
 - [License](https://github.com/ivanwilliammd/iderare-pheno/blob/main/LICENSE)
+- [Interactive Playbook Example](https://github.com/ivanwilliammd/iderare-pheno/blob/main/Playbook.ipynb)
 - Interactive Webapps Implementation of at [Streamlit](https://bioinformatics-ivanwilliamharsono.streamlitapp.com/IDeRare_Pheno)
 
 
@@ -83,13 +98,15 @@ pip install -e .
 
 <!-- end install source -->
 
-## Usage
+## Importing the library
 
 ```python
 from iderare_pheno.converter import term2omim, term2orpha, term2hpo, batchconvert
 from iderare_pheno.simrec import hpo2omim_similarity, omim_recommendation, hpo2name
-from iderare_pheno.utils import linkage_dendrogram, list2tsv
+from iderare_pheno.utils import linkage_dendrogram, list2tsv, generate_yml
 ```
+As the complete readthedocs.io is still ongoing, please kindly refer to this [Interactive Playbook Example](https://github.com/ivanwilliammd/iderare-pheno/blob/main/Playbook.ipynb)
+
 
 ## Team
 
