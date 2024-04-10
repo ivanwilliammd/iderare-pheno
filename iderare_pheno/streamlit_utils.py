@@ -1,8 +1,10 @@
+import io
 import os
 from datetime import datetime
 
 import pandas as pd
 import scipy.cluster
+import streamlit as st
 import yaml
 from matplotlib import pyplot as plt
 
@@ -37,11 +39,13 @@ def list2tsv(
 # Print the dendrogram tree
 def linkage_dendrogram(linkage, labels, title="Similarity", threshold=0.3, path_to_save=None):
     if len(linkage) == 0:
-        print("Linkage is empty. The data not possible due to blank linkage information.")
+        st.write("Linkage is empty. The data not possible due to blank linkage information.")
         return
+
     plt.figure(figsize=(20, len(linkage)))
     scipy.cluster.hierarchy.dendrogram(
         linkage,
+        distance_sort="ascending",
         labels=labels,
         show_contracted=True,
         leaf_font_size=plt.rcParams["font.size"] * 1.5,
@@ -65,14 +69,21 @@ def linkage_dendrogram(linkage, labels, title="Similarity", threshold=0.3, path_
     plt.ylabel("Disease", fontsize=plt.rcParams["font.size"] * 2)
     plt.tight_layout()
 
-    if not os.path.exists("output"):
-        os.makedirs("output")
-        print("Folder output created.")
-    else:
-        print("Folder output already exists.")
+    col1, col2 = st.columns([3, 1])
+    with col1:
+        st.success("Dendrogram tree plotted successfully")
 
-    if path_to_save is None:
-        path_to_save = "output/{date_time}_{title}.png".format(
+    path_to_save = os.path.join(
+        "{date_time}_{title}.png".format(
             date_time=datetime.now().strftime("%Y%m%d_%H%M%S"), title=title[0:30]
         )
-    plt.savefig(path_to_save)
+    )
+    img = io.BytesIO()
+
+    plt.savefig(img, format="png")
+    with col2:
+        st.download_button(
+            label="📷 Download graph", data=img, file_name=path_to_save, mime="image/png"
+        )
+
+    st.pyplot(plt, use_container_width=True)
