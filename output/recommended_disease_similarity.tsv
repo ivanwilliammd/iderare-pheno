@@ -533,8 +533,8 @@ rank	id	name	score
 532	251900	Mitochondrial myopathy, episodic, with optic atrophy and reversible leukoencephalopathy	0.21739064157009125
 533	614082	Fanconi anemia, complementation group G	0.21736209094524384
 534	614700	Immunodeficiency, common variable, 8, with autoimmunity	0.2170654684305191
-535	610460	THIOPURINE S-METHYLTRANSFERASE DEFICIENCY	0.2169448435306549
-536	600084	Macrocytosis, familial	0.2169448435306549
+535	600084	Macrocytosis, familial	0.2169448435306549
+536	610460	THIOPURINE S-METHYLTRANSFERASE DEFICIENCY	0.2169448435306549
 537	618999	Autoinflammation, immune dysregulation, and eosinophilia	0.21670253574848175
 538	260005	5-@oxoprolinase deficiency	0.21646401286125183
 539	615026	Riboflavin deficiency	0.21642431616783142
@@ -730,14 +730,14 @@ rank	id	name	score
 729	236200	Homocystinuria due to cystathionine beta-synthase deficiency	0.1944669932126999
 730	614741	Mitochondrial pyruvate carrier deficiency	0.1942017674446106
 731	122700	Coumarin resistance	0.1940927654504776
-732	306930	Hemopoietic proliferation	0.1940927654504776
+732	137500	Giant neutrophil leukocytes	0.1940927654504776
 733	151500	Leukocyte nuclear appendages, hereditary prevalence of	0.1940927654504776
-734	137500	Giant neutrophil leukocytes	0.1940927654504776
-735	207300	Antithrombin, familial hemorrhagic diathesis due to	0.19408340752124786
-736	173450	Platelet factor 3 deficiency	0.19408340752124786
-737	144050	HYPERHEPARINEMIA	0.19408340752124786
-738	169200	Pechet factor deficiency	0.19408340752124786
-739	114650	Car factor deficiency	0.19408340752124786
+734	306930	Hemopoietic proliferation	0.1940927654504776
+735	173450	Platelet factor 3 deficiency	0.19408340752124786
+736	114650	Car factor deficiency	0.19408340752124786
+737	169200	Pechet factor deficiency	0.19408340752124786
+738	144050	HYPERHEPARINEMIA	0.19408340752124786
+739	207300	Antithrombin, familial hemorrhagic diathesis due to	0.19408340752124786
 740	609016	Long-Chain 3-hydroxyacyl-coa dehydrogenase deficiency	0.1938800811767578
 741	601977	Thrombocythemia 2	0.19383709132671356
 742	610773	Mitochondrial phosphate carrier deficiency	0.19333024322986603
@@ -759,8 +759,8 @@ rank	id	name	score
 758	618168	Diarrhea 9	0.19200752675533295
 759	300751	Anemia, sideroblastic, X-linked	0.19191253185272217
 760	220111	Mitochondrial complex IV deficiency, nuclear type 5, (French-Canadian)	0.19180463254451752
-761	233710	Granulomatous disease, chronic, autosomal recessive, cytochrome b-positive, type II	0.19166679680347443
-762	233700	Granulomatous disease, chronic, autosomal recessive, cytochrome b-positive, type I	0.19166679680347443
+761	233700	Granulomatous disease, chronic, autosomal recessive, cytochrome b-positive, type I	0.19166679680347443
+762	233710	Granulomatous disease, chronic, autosomal recessive, cytochrome b-positive, type II	0.19166679680347443
 763	273900	Thrombocytopenia 3	0.1916140615940094
 764	301110	Hemolytic uremic syndrome, atypical, 8, with rhizomelic short stature	0.1915588229894638
 765	619003	Mitochondrial complex I deficiency, nuclear type 35	0.19128020107746124
@@ -1245,8 +1245,8 @@ rank	id	name	score
 1244	612089	Hypophosphatemic rickets and hyperparathyroidism	0.15481963753700256
 1245	618225	Mitochondrial complex I deficiency, nuclear type 4	0.1547471284866333
 1246	249500	Intellectual developmental disorder, autosomal recessive 1	0.15471872687339783
-1247	237550	Hyperbilirubinemia, conjugated, type III	0.15460172295570374
-1248	606785	Crigler-najjar syndrome, type II	0.15460172295570374
+1247	606785	Crigler-najjar syndrome, type II	0.15460172295570374
+1248	237550	Hyperbilirubinemia, conjugated, type III	0.15460172295570374
 1249	301000	Wiskott-Aldrich syndrome	0.154575914144516
 1250	618857	Diabetes mellitus, permanent neonatal 3, with or without neurologic features	0.1545705795288086
 1251	301081	Autoinflammatory disease, systemic, X-linked	0.15432199835777283
@@ -1717,8 +1717,8 @@ rank	id	name	score
 1716	301080	Systemic lupus erythematosus 17	0.12816612422466278
 1717	615356	Muscular dystrophy, limb-girdle, autosomal recessive 18	0.1281486302614212
 1718	612119	Trehalase deficiency	0.12813924252986908
-1719	613412	Esophagitis, eosinophilic, 2	0.12810483574867249
-1720	610247	Esophagitis, eosinophilic, 1	0.12810483574867249
+1719	610247	Esophagitis, eosinophilic, 1	0.12810483574867249
+1720	613412	Esophagitis, eosinophilic, 2	0.12810483574867249
 1721	248500	Alpha-mannosidosis	0.1280989646911621
 1722	310095	Muscular dystrophy, progressive pectorodorsal	0.12804631888866425
 1723	191390	Inflammatory bowel disease 11	0.12798067927360535
@@ -2165,12 +2165,12 @@ rank	id	name	score
 2164	220210	Ritscher-Schinzel syndrome 1	0.11162099242210388
 2165	601223	Neuronal intestinal dysplasia, type B	0.11161572486162186
 2166	270425	Sodium-Potassium-Atpase activity of red cell	0.11161572486162186
-2167	248260	Magnesium, elevated red cell	0.11161572486162186
-2168	168820	Paraoxonase 1	0.11161572486162186
-2169	204800	AMOBARBITAL, DEFICIENT N-HYDROXYLATION OF	0.11161572486162186
-2170	243400	Acetylation, slow	0.11161572486162186
-2171	194470	Zinc, elevated plasma	0.11161572486162186
-2172	240400	HYPOASCORBEMIA	0.11161572486162186
+2167	240400	HYPOASCORBEMIA	0.11161572486162186
+2168	243400	Acetylation, slow	0.11161572486162186
+2169	194470	Zinc, elevated plasma	0.11161572486162186
+2170	168820	Paraoxonase 1	0.11161572486162186
+2171	204800	AMOBARBITAL, DEFICIENT N-HYDROXYLATION OF	0.11161572486162186
+2172	248260	Magnesium, elevated red cell	0.11161572486162186
 2173	618057	Drug metabolism, altered, CES1-related	0.11160155385732651
 2174	607831	Charcot-Marie-Tooth disease, axonal, type 2K	0.11160071939229965
 2175	263600	Polysaccharide, storage of unusual	0.1115911602973938
@@ -2242,8 +2242,8 @@ rank	id	name	score
 2241	264500	Pseudouridinuria and mental defect	0.10972490906715393
 2242	275120	Thyrotropin-Releasing hormone deficiency	0.10971561074256897
 2243	247450	Lymphoblastic transformation, intrinsic defect in	0.10969709604978561
-2244	247430	Lymphoblastic transformation, inhibition of	0.10969709604978561
-2245	247650	Lymphokine deficiency	0.10969709604978561
+2244	247650	Lymphokine deficiency	0.10969709604978561
+2245	247430	Lymphoblastic transformation, inhibition of	0.10969709604978561
 2246	618349	Galloway-Mowat syndrome 8	0.10967360436916351
 2247	619707	Agammaglobulinemia 10, autosomal dominant	0.10963360965251923
 2248	618193	Polycystic lipomembranous osteodysplasia with sclerosing leukoencephalopathy 2	0.10961953550577164
@@ -2442,17 +2442,17 @@ rank	id	name	score
 2441	614837	Hypogonadotropic hypogonadism 8 with or without anosmia	0.10545823723077774
 2442	610883	Potocki-Lupski syndrome	0.10542610287666321
 2443	259420	Osteogenesis imperfecta, type III	0.10541519522666931
-2444	300125	Migraine, familial typical, susceptibility to, 2	0.10539457947015762
-2445	607498	Migraine with or without aura, susceptibility to, 3	0.10539457947015762
-2446	607508	Migraine with or without aura, susceptibility to, 5	0.10539457947015762
-2447	157300	Migraine with or without aura, susceptibility to, 1	0.10539457947015762
-2448	610208	Migraine with or without aura, susceptibility to, 10	0.10539457947015762
+2444	607498	Migraine with or without aura, susceptibility to, 3	0.10539457947015762
+2445	607508	Migraine with or without aura, susceptibility to, 5	0.10539457947015762
+2446	610208	Migraine with or without aura, susceptibility to, 10	0.10539457947015762
+2447	300125	Migraine, familial typical, susceptibility to, 2	0.10539457947015762
+2448	157300	Migraine with or without aura, susceptibility to, 1	0.10539457947015762
 2449	610209	Migraine with or without aura, susceptibility to, 11	0.10539457947015762
 2450	262700	Pituitary hormone deficiency, combined, 4	0.10538987815380096
 2451	613980	Atrial fibrillation, familial, 9	0.10534213483333588
 2452	618724	Heyn-Sproul-Jackson syndrome	0.10532540827989578
-2453	612225	Maturity-onset diabetes of the young, type IX	0.10531798005104065
-2454	606394	Maturity-onset diabetes of the young 6	0.10531798005104065
+2453	606394	Maturity-onset diabetes of the young 6	0.10531798005104065
+2454	612225	Maturity-onset diabetes of the young, type IX	0.10531798005104065
 2455	620141	Developmental delay, language impairment, and ocular abnormalities	0.10530989617109299
 2456	618883	Hypoparathyroidism, familial isolated 2	0.10523132979869843
 2457	611722	Krabbe disease, atypical, due to saposin A deficiency	0.10522851347923279
@@ -2779,8 +2779,8 @@ rank	id	name	score
 2778	611880	Cardiomyopathy, dilated, 2A	0.09909746795892715
 2779	613495	Immunodeficiency, common variable, 5	0.09908842295408249
 2780	142400	Hernia, hiatus	0.09905369579792023
-2781	607829	Mitral valve prolapse, myxomatous 2	0.09904160350561142
-2782	610840	Mitral valve prolapse, myxomatous 3	0.09904160350561142
+2781	610840	Mitral valve prolapse, myxomatous 3	0.09904160350561142
+2782	607829	Mitral valve prolapse, myxomatous 2	0.09904160350561142
 2783	617047	Cardiomyopathy, familial hypertrophic, 26	0.09900821000337601
 2784	214400	Charcot-Marie-Tooth disease, type 4A	0.09898467361927032
 2785	222730	Dicarboxylicamino aciduria	0.09896311163902283
@@ -2862,8 +2862,8 @@ rank	id	name	score
 2861	184250	Spondyloepimetaphyseal dysplasia, Strudwick type	0.09750639647245407
 2862	212090	Cardiac septal defects with coarctation of the aorta	0.09750016778707504
 2863	618464	Paragangliomas 6	0.09749868512153625
-2864	607411	Patent ductus arteriosus 1	0.09748690575361252
-2865	617039	Patent ductus arteriosus 3	0.09748690575361252
+2864	617039	Patent ductus arteriosus 3	0.09748690575361252
+2865	607411	Patent ductus arteriosus 1	0.09748690575361252
 2866	620198	Thyroid hormone metabolism, abnormal, 3	0.09748674184083939
 2867	268900	SARCOSINEMIA	0.09748270362615585
 2868	302960	Chondrodysplasia punctata 2, X-linked dominant	0.09746046364307404
@@ -3194,8 +3194,8 @@ rank	id	name	score
 3193	259440	Osteogenesis imperfecta, type IX	0.09217461198568344
 3194	108950	Atrial tachyarrhythmia with short pr interval	0.0921710804104805
 3195	178370	Pulmonary atresia with ventricular septal defect	0.09211738407611847
-3196	210100	Beta-aminoisobutyric acid, urinary excretion of	0.09211044013500214
-3197	219500	CYSTATHIONINURIA	0.09211044013500214
+3196	219500	CYSTATHIONINURIA	0.09211044013500214
+3197	210100	Beta-aminoisobutyric acid, urinary excretion of	0.09211044013500214
 3198	615991	Bardet-Biedl syndrome 14	0.09210837632417679
 3199	603285	Cerebral cavernous malformations 3	0.0921022891998291
 3200	215480	Choroid plexus calcification and mental retardation	0.09209674596786499
@@ -3280,8 +3280,8 @@ rank	id	name	score
 3279	619352	Ataxia, intention tremor, and hypotonia syndrome, childhood-onset	0.09116992354393005
 3280	607736	Charcot-Marie-Tooth disease, type 2J	0.09115041047334671
 3281	170500	Hyperkalemic periodic paralysis	0.09111524373292923
-3282	108000	Arteries, anomalies of	0.0911082997918129
-3283	234820	Hemangiopericytoma, malignant	0.0911082997918129
+3282	234820	Hemangiopericytoma, malignant	0.0911082997918129
+3283	108000	Arteries, anomalies of	0.0911082997918129
 3284	617916	Neurodegeneration with brain iron accumulation 7	0.09110558032989502
 3285	123000	Craniometaphyseal dysplasia, autosomal dominant	0.09110305458307266
 3286	608978	Meacham syndrome	0.09109769761562347
@@ -3315,8 +3315,8 @@ rank	id	name	score
 3314	615707	Immunodeficiency 20	0.0906195119023323
 3315	614342	Mental retardation, autosomal recessive 30	0.09057782590389252
 3316	609273	Nemaline myopathy 6	0.09055545181035995
-3317	612354	Inflammatory bowel disease 21	0.09054520726203918
-3318	604519	Inflammatory bowel disease 3	0.09054520726203918
+3317	604519	Inflammatory bowel disease 3	0.09054520726203918
+3318	612354	Inflammatory bowel disease 21	0.09054520726203918
 3319	233270	Gombo syndrome	0.09053365141153336
 3320	114900	Carcinoid tumors, intestinal	0.09051241725683212
 3321	613155	Muscular dystrophy-dystroglycanopathy (congenital with impaired intellectual development), type B, 1	0.09050891548395157
@@ -3357,8 +3357,8 @@ rank	id	name	score
 3356	115210	Cardiomyopathy, familial restrictive, 1	0.09007403999567032
 3357	619173	Neurodegeneration, childhood-onset, hypotonia, respiratory insufficiency and brain imaging abnormalities	0.09007308632135391
 3358	184200	SPONDYLOLISTHESIS	0.09005144983530045
-3359	310980	OMPHALOCELE	0.09003555029630661
-3360	164750	Omphalocele due to duplication of 1p31.3	0.09003555029630661
+3359	164750	Omphalocele due to duplication of 1p31.3	0.09003555029630661
+3360	310980	OMPHALOCELE	0.09003555029630661
 3361	300600	Aland island eye disease	0.0900256410241127
 3362	608266	Parathyroid carcinoma	0.09000127762556076
 3363	608423	Muscular dystrophy, limb-girdle, autosomal dominant 2	0.08997578918933868
@@ -3408,10 +3408,10 @@ rank	id	name	score
 3407	616255	Short stature with nonspecific skeletal abnormalities	0.08928544819355011
 3408	164310	Oculopharyngodistal myopathy 1	0.08928516507148743
 3409	169600	Benign chronic pemphigus	0.0892733782529831
-3410	106500	Annular erythema	0.0892733782529831
-3411	191950	Urticaria, familial localized heat	0.0892733782529831
+3410	191850	Urticaria, aquagenic	0.0892733782529831
+3411	106500	Annular erythema	0.0892733782529831
 3412	133000	Erythema palmare hereditarium	0.0892733782529831
-3413	191850	Urticaria, aquagenic	0.0892733782529831
+3413	191950	Urticaria, familial localized heat	0.0892733782529831
 3414	601462	Myasthenic syndrome, congenital, 1A, slow-channel	0.08925560861825943
 3415	615616	Arrhythmogenic right ventricular dysplasia, familial, 13	0.08924578875303268
 3416	618557	Epileptic encephalopathy, early infantile, 78	0.08924062550067902
@@ -3552,14 +3552,14 @@ rank	id	name	score
 3551	271310	Spinocerebellar degeneration and corneal dystrophy	0.08749755471944809
 3552	520000	Diabetes and deafness, maternally inherited	0.08749601989984512
 3553	115400	Carpal displacement	0.08746864646673203
-3554	167600	Palmaris longus muscle, absence of	0.08746864646673203
-3555	189100	Toe, misshapen	0.08746864646673203
-3556	126500	Double nail for fifth toe	0.08746864646673203
-3557	600356	Pachydermodactyly, familial	0.08746864646673203
-3558	158100	Monophalangy of great toe	0.08746864646673203
-3559	178350	Pubic bone dysplasia	0.08746864646673203
+3554	158100	Monophalangy of great toe	0.08746864646673203
+3555	189000	Toe, fifth, number of phalanges in	0.08746864646673203
+3556	167600	Palmaris longus muscle, absence of	0.08746864646673203
+3557	189100	Toe, misshapen	0.08746864646673203
+3558	126500	Double nail for fifth toe	0.08746864646673203
+3559	600356	Pachydermodactyly, familial	0.08746864646673203
 3560	189200	Toes, relative length of first and second	0.08746864646673203
-3561	189000	Toe, fifth, number of phalanges in	0.08746864646673203
+3561	178350	Pubic bone dysplasia	0.08746864646673203
 3562	609200	Myopathy, myofibrillar, 3	0.08745244145393372
 3563	109000	AURICULOOSTEODYSPLASIA	0.08743564039468765
 3564	274190	Thumb agenesis, short stature, and immunodeficiency	0.08742950856685638
@@ -3661,11 +3661,11 @@ rank	id	name	score
 3660	609968	Hyperinsulinemic hypoglycemia, familial, 5	0.08643051981925964
 3661	615612	Developmental dysplasia of the hip 2	0.0863974541425705
 3662	190410	Trigger thumb	0.08639673888683319
-3663	609310	Colorectal cancer, hereditary nonpolyposis, type 2	0.08639606833457947
-3664	120435	Lynch syndrome I	0.08639606833457947
+3663	120435	Lynch syndrome I	0.08639606833457947
+3664	609310	Colorectal cancer, hereditary nonpolyposis, type 2	0.08639606833457947
 3665	192900	Vertebral hypoplasia with lumbar kyphosis	0.08638421446084976
-3666	612794	Atrial septal defect 5	0.08635368198156357
-3667	614089	Atrial septal defect 3	0.08635368198156357
+3666	614089	Atrial septal defect 3	0.08635368198156357
+3667	612794	Atrial septal defect 5	0.08635368198156357
 3668	618798	Beck-Fahrner syndrome	0.08634355664253235
 3669	260970	Peripheral neuropathy, ataxia, focal necrotizing encephalopathy, and	0.08633489906787872
 3670	608390	Myotonia, potassium-aggravated	0.08631479740142822
@@ -3721,8 +3721,8 @@ rank	id	name	score
 3720	618138	Muscular dystrophy, limb-girdle, autosomal recessive 23	0.08569363504648209
 3721	619576	Cerebellar ataxia, brain abnormalities, and cardiac conduction defects	0.08568663895130157
 3722	618889	Liberfarb syndrome	0.08565959334373474
-3723	614331	Colorectal cancer, hereditary nonpolyposis, type 6	0.08563936501741409
-3724	614385	Colorectal cancer, hereditary nonpolyposis, type 7	0.08563936501741409
+3723	614385	Colorectal cancer, hereditary nonpolyposis, type 7	0.08563936501741409
+3724	614331	Colorectal cancer, hereditary nonpolyposis, type 6	0.08563936501741409
 3725	268300	Roberts-SC phocomelia syndrome	0.0856313705444336
 3726	119650	Cleidorhizomelic syndrome	0.08561602979898453
 3727	619574	Charcot-Marie-Tooth disease, axonal, type 2HH	0.08559981733560562
@@ -3756,12 +3756,12 @@ rank	id	name	score
 3755	603860	Medullary cystic kidney disease 2	0.08524040877819061
 3756	618725	Intellectual developmental disorder with behavioral abnormalities and craniofacial dysmorphism with or without seizures	0.08521707355976105
 3757	313850	Thoracoabdominal syndrome	0.08521413803100586
-3758	129150	Echo virus 11 sensitivity	0.08520057797431946
-3759	146850	Immune suppression	0.08520057797431946
+3758	312210	Radiation sensitivity of natural killer activity	0.08520057797431946
+3759	129150	Echo virus 11 sensitivity	0.08520057797431946
 3760	246300	Leprosy, susceptibility to	0.08520057797431946
-3761	103920	Allergic bronchopulmonary aspergillosis	0.08520057797431946
-3762	242890	Immunoglobulin D level in plasma, low	0.08520057797431946
-3763	312210	Radiation sensitivity of natural killer activity	0.08520057797431946
+3761	242890	Immunoglobulin D level in plasma, low	0.08520057797431946
+3762	103920	Allergic bronchopulmonary aspergillosis	0.08520057797431946
+3763	146850	Immune suppression	0.08520057797431946
 3764	617730	Galloway-Mowat syndrome 4	0.08519601076841354
 3765	277470	Pontocerebellar hypoplasia, type 2A	0.08514486998319626
 3766	613791	Masp2 deficiency	0.0851169154047966
@@ -3831,8 +3831,8 @@ rank	id	name	score
 3830	230300	GALACTORRHEA	0.08450847119092941
 3831	614378	Cranioectodermal dysplasia 4	0.08448690176010132
 3832	617799	Intellectual developmental disorder, autosomal dominant 54	0.08448343724012375
-3833	605055	Alzheimer disease, familial early-onset, with coexisting amyloid and prion pathology	0.08447287976741791
-3834	105250	Amyloidosis, primary localized cutaneous, 1	0.08447287976741791
+3833	105250	Amyloidosis, primary localized cutaneous, 1	0.08447287976741791
+3834	605055	Alzheimer disease, familial early-onset, with coexisting amyloid and prion pathology	0.08447287976741791
 3835	615112	Urofacial syndrome 2	0.08446972072124481
 3836	163700	Nipples, supernumerary	0.08446952700614929
 3837	615092	Left ventricular noncompaction 7	0.08445770293474197
@@ -3864,8 +3864,8 @@ rank	id	name	score
 3863	180100	Retinitis pigmentosa 1	0.08419644087553024
 3864	219250	Cutis marmorata telangiectatica congenita	0.08418141305446625
 3865	308750	Kallmann syndrome with spastic paraplegia	0.08417288959026337
-3866	613712	Hirschsprung disease, susceptibility to, 4	0.08416040241718292
-3867	600155	Hirschsprung disease, susceptibility to, 2	0.08416040241718292
+3866	600155	Hirschsprung disease, susceptibility to, 2	0.08416040241718292
+3867	613712	Hirschsprung disease, susceptibility to, 4	0.08416040241718292
 3868	300706	Mental retardation, x-linked, syndromic, Turner type	0.08415867388248444
 3869	608220	Spastic paraplegia 25, autosomal recessive	0.08414667099714279
 3870	217990	Corpus callosum, agenesis of	0.08412957191467285
@@ -3889,8 +3889,8 @@ rank	id	name	score
 3888	255710	Myotonia with skeletal abnormalities and mental retardation	0.08390899747610092
 3889	614100	Cutis laxa, neonatal, with marfanoid phenotype	0.08388546854257584
 3890	618123	Polydactyly, postaxial, type A8	0.08388327807188034
-3891	122460	Coronavirus 229E susceptibility	0.08388176560401917
-3892	600670	Varicella, severe recurrent	0.08388176560401917
+3891	600670	Varicella, severe recurrent	0.08388176560401917
+3892	122460	Coronavirus 229E susceptibility	0.08388176560401917
 3893	137360	GENOCHONDROMATOSIS	0.08387675881385803
 3894	601809	Spondylospinal thoracic dysostosis	0.08385836333036423
 3895	618573	Hypothyroidism, congenital, nongoitrous, 7	0.08383852243423462
@@ -3968,13 +3968,13 @@ rank	id	name	score
 3967	614889	Immunodeficiency 28	0.08304672688245773
 3968	611228	Charcot-Marie-Tooth disease, type 4J	0.08304153382778168
 3969	228020	Fascial dystrophy, congenital	0.0830363929271698
-3970	213500	Cerebral angiopathy, dysphoric	0.08303171396255493
-3971	126180	Discrimination, two-point, reduction in	0.08303171396255493
-3972	244100	Jumping frenchman of maine	0.08303171396255493
-3973	170980	Peroneal nerve, accessory deep	0.08303171396255493
-3974	309840	Modifier, X-linked, for neurofunctional defects	0.08303171396255493
-3975	222500	DIASTEMATOMYELIA	0.08303171396255493
-3976	156220	Meralgia paraesthetica, familial	0.08303171396255493
+3970	222500	DIASTEMATOMYELIA	0.08303171396255493
+3971	170980	Peroneal nerve, accessory deep	0.08303171396255493
+3972	156220	Meralgia paraesthetica, familial	0.08303171396255493
+3973	126180	Discrimination, two-point, reduction in	0.08303171396255493
+3974	213500	Cerebral angiopathy, dysphoric	0.08303171396255493
+3975	309840	Modifier, X-linked, for neurofunctional defects	0.08303171396255493
+3976	244100	Jumping frenchman of maine	0.08303171396255493
 3977	225250	Hypothyroidism, congenital, nongoitrous, 5	0.08301139622926712
 3978	616911	Immunodeficiency-centromeric instability-facial anomalies syndrome 4	0.08298826962709427
 3979	185600	Symphalangism of toes	0.08298084139823914
@@ -3993,8 +3993,8 @@ rank	id	name	score
 3992	256731	Ceroid lipofuscinosis, neuronal, 5	0.08288281410932541
 3993	220600	Split-Hand/foot malformation 1 with sensorineural hearing loss	0.08285514265298843
 3994	601370	Holoprosencephaly, semilobar, with craniosynostosis	0.08282479643821716
-3995	301201	Amelogenesis imperfecta, hypoplastic/hypomaturation, X-linked 2	0.08280631899833679
-3996	104500	Amelogenesis imperfecta, type IB	0.08280631899833679
+3995	104500	Amelogenesis imperfecta, type IB	0.08280631899833679
+3996	301201	Amelogenesis imperfecta, hypoplastic/hypomaturation, X-linked 2	0.08280631899833679
 3997	186850	Tarsal fusion	0.08280107378959656
 3998	618291	Spinal muscular atrophy, lower extremity-predominant, 2B, autosomal dominant	0.08278805762529373
 3999	611808	Tremor, hereditary essential, and idiopathic normal pressure hydrocephalus	0.08278115838766098
@@ -4032,10 +4032,10 @@ rank	id	name	score
 4031	620389	Nemaline myopathy 5C, autosomal dominant	0.0825761929154396
 4032	616364	White-Sutton syndrome	0.08257149159908295
 4033	617260	Global developmental delay, absent or hypoplastic corpus callosum, and dysmorphic facies	0.0825607106089592
-4034	614329	Mental retardation, autosomal recessive 31	0.08255430310964584
-4035	300047	Mental retardation, X-linked 20	0.08255430310964584
+4034	617125	Mental retardation, autosomal recessive 56	0.08255430310964584
+4035	614329	Mental retardation, autosomal recessive 31	0.08255430310964584
 4036	611090	Mental retardation, autosomal recessive 12	0.08255430310964584
-4037	617125	Mental retardation, autosomal recessive 56	0.08255430310964584
+4037	300047	Mental retardation, X-linked 20	0.08255430310964584
 4038	190500	Triphalangeal thumb with double phalanges	0.08254913240671158
 4039	609222	Dandy-Walker malformation with occipital cephalocele, autosomal dominant	0.08252942562103271
 4040	617402	Cutis laxa, autosomal recessive, type IIC	0.0825267806649208
@@ -4058,8 +4058,8 @@ rank	id	name	score
 4057	614430	Atrioventricular septal defect 4	0.08236242830753326
 4058	608810	Myopathy, myofibrillar, 2, mfm2	0.08235806226730347
 4059	613912	Complement factor D deficiency	0.08235656470060349
-4060	611097	Mental retardation, autosomal recessive 11	0.08235529810190201
-4061	300115	Mental retardation, X-linked 50	0.08235529810190201
+4060	300115	Mental retardation, X-linked 50	0.08235529810190201
+4061	611097	Mental retardation, autosomal recessive 11	0.08235529810190201
 4062	183500	Split-Hand and split-foot with hypodontia	0.08234869688749313
 4063	616029	Ectodermal dysplasia/short stature syndrome	0.08234022557735443
 4064	612567	Inflammatory bowel disease 25, early onset, autosomal recessive	0.08233930915594101
@@ -4096,8 +4096,8 @@ rank	id	name	score
 4095	600202	Dyslexia, susceptibility to, 2	0.08210087567567825
 4096	615966	Immunodeficiency 26 with or without neurologic abnormalities	0.08210041373968124
 4097	210350	Biemond syndrome II	0.0820809081196785
-4098	130300	Electroencephalographic peculiarity: fronto-precentral beta wave groups	0.08207640796899796
-4099	130200	Electroencephalographic peculiarity: 14 and 6 per sec. positive spikephenomenon	0.08207640796899796
+4098	130200	Electroencephalographic peculiarity: 14 and 6 per sec. positive spikephenomenon	0.08207640796899796
+4099	130300	Electroencephalographic peculiarity: fronto-precentral beta wave groups	0.08207640796899796
 4100	608611	Ribose 5-phosphate isomerase deficiency	0.08207058161497116
 4101	615067	Ciliary dyskinesia, primary, 20	0.08206577599048615
 4102	617223	Sudden cardiac failure, alcohol-induced	0.0820644423365593
@@ -4130,10 +4130,10 @@ rank	id	name	score
 4129	619238	Immunodeficiency 79	0.0818445011973381
 4130	616914	Marfan lipodystrophy syndrome	0.08184009790420532
 4131	613796	Mycobacterial and viral infections, susceptibility to, autosomal recessive	0.08182527124881744
-4132	301700	ANOSMIA	0.08181295543909073
+4132	107200	Anosmia, congenital	0.08181295543909073
 4133	243450	Isovaleric acid, inability to smell	0.08181295543909073
-4134	107200	Anosmia, congenital	0.08181295543909073
-4135	270350	SKUNK N-BUTYLMERCAPTAN, INABILITY TO SMELL	0.08181295543909073
+4134	270350	SKUNK N-BUTYLMERCAPTAN, INABILITY TO SMELL	0.08181295543909073
+4135	301700	ANOSMIA	0.08181295543909073
 4136	618667	Hydrocephalus, congenital communicating, 1	0.08180464804172516
 4137	615162	Mental retardation, autosomal recessive 35	0.08179397135972977
 4138	609162	Czech dysplasia, Metatarsal type	0.08179166913032532
@@ -4315,59 +4315,59 @@ rank	id	name	score
 4314	602111	Spondyloepimetaphyseal dysplasia, Missouri type	0.08013882488012314
 4315	262500	Laron syndrome	0.08012603968381882
 4316	266100	Epilepsy, pyridoxine-dependent	0.08010483533143997
-4317	164185	Ocular cicatricial pemphigoid	0.08010389655828476
-4318	128290	Ear antitragus, tag at base of	0.08010389655828476
-4319	114450	Cancer, familial, with in vitro radioresistance	0.08010389655828476
-4320	128500	Ear folding	0.08010389655828476
-4321	128600	Ear malformation	0.08010389655828476
-4322	133500	Exchondrosis of pinna, posterior	0.08010389655828476
-4323	165670	Ossified ear cartilages	0.08010389655828476
-4324	102660	Adamantinoma of long bones	0.08010389655828476
-4325	149600	Labia minora, incomplete adhesion of	0.08010389655828476
-4326	314380	Unique green phenomenon	0.08010389655828476
-4327	159500	Myelinated optic nerve fibers	0.08010389655828476
-4328	113600	Branchial cleft anomaliesbranchial cysts, included	0.08008705824613571
-4329	168800	Parotidomegaly, hereditary bilateral	0.08008705824613571
+4317	159500	Myelinated optic nerve fibers	0.08010389655828476
+4318	314380	Unique green phenomenon	0.08010389655828476
+4319	102660	Adamantinoma of long bones	0.08010389655828476
+4320	164185	Ocular cicatricial pemphigoid	0.08010389655828476
+4321	149600	Labia minora, incomplete adhesion of	0.08010389655828476
+4322	128290	Ear antitragus, tag at base of	0.08010389655828476
+4323	133500	Exchondrosis of pinna, posterior	0.08010389655828476
+4324	128500	Ear folding	0.08010389655828476
+4325	165670	Ossified ear cartilages	0.08010389655828476
+4326	114450	Cancer, familial, with in vitro radioresistance	0.08010389655828476
+4327	128600	Ear malformation	0.08010389655828476
+4328	168800	Parotidomegaly, hereditary bilateral	0.08008705824613571
+4329	113600	Branchial cleft anomaliesbranchial cysts, included	0.08008705824613571
 4330	617626	Fibromatosis, gingival, 5	0.08008521050214767
-4331	147540	Insect stings, hypersensitivity to	0.0800820142030716
-4332	120450	Comedones, familial dyskeratotic	0.0800820142030716
-4333	151620	Lichen planus, familial	0.0800820142030716
-4334	102350	Acromial dimples	0.0800820142030716
-4335	125540	Dermal ridges, patternless	0.0800820142030716
-4336	177350	Pseudoatrophoderma colli	0.0800820142030716
-4337	125600	Dermatosis papulosa nigra	0.0800820142030716
-4338	114140	Callosities, hereditary painful	0.0800820142030716
-4339	609649	Trichilemmal cyst 1	0.0800820142030716
-4340	167950	Papillomatosis, florid, of nipple	0.0800820142030716
-4341	186600	Syringomas, multiple	0.0800820142030716
+4331	114140	Callosities, hereditary painful	0.0800820142030716
+4332	147540	Insect stings, hypersensitivity to	0.0800820142030716
+4333	186600	Syringomas, multiple	0.0800820142030716
+4334	125540	Dermal ridges, patternless	0.0800820142030716
+4335	151620	Lichen planus, familial	0.0800820142030716
+4336	609649	Trichilemmal cyst 1	0.0800820142030716
+4337	167950	Papillomatosis, florid, of nipple	0.0800820142030716
+4338	125600	Dermatosis papulosa nigra	0.0800820142030716
+4339	177350	Pseudoatrophoderma colli	0.0800820142030716
+4340	120450	Comedones, familial dyskeratotic	0.0800820142030716
+4341	102350	Acromial dimples	0.0800820142030716
 4342	620193	Lacrimoauriculodentodigital syndrome-3	0.08008012175559998
-4343	600757	Orofacial cleft 3	0.08007614314556122
-4344	161500	Nasal groove, familial transverse	0.08007614314556122
+4343	161500	Nasal groove, familial transverse	0.08007614314556122
+4344	600757	Orofacial cleft 3	0.08007614314556122
 4345	161470	Nasal alar collapse, bilateral	0.08007614314556122
 4346	610015	Glutamine deficiency, congenital	0.08006807416677475
 4347	151630	Lip, median nodule of upper	0.08006716519594193
 4348	613711	Hirschsprung disease, susceptibility to, 3	0.08006613701581955
 4349	121201	Epilepsy, benign neonatal, 2	0.08006519824266434
-4350	189150	Toe, rotated fifth	0.08006435632705688
+4350	180600	Ringed hair	0.08006435632705688
 4351	190340	Trichodiscomas, familial multiple	0.08006435632705688
-4352	180600	Ringed hair	0.08006435632705688
+4352	189150	Toe, rotated fifth	0.08006435632705688
 4353	275250	Tongue, pigmented fungiform papillae of	0.08005830645561218
 4354	608415	BRADYOPSIA	0.08005625009536743
-4355	255500	Myopia, infantile severe	0.08005330711603165
-4356	612717	Myopia 15	0.08005330711603165
+4355	612717	Myopia 15	0.08005330711603165
+4356	255500	Myopia, infantile severe	0.08005330711603165
 4357	178300	Ptosis, hereditary congenital 1	0.08005321770906448
 4358	617637	Deafness, autosomal recessive 106	0.08005187660455704
-4359	600971	Deafness, autosomal recessive 6	0.08005187660455704
-4360	615649	Deafness, autosomal dominant 54	0.08005187660455704
-4361	609946	Deafness, autosomal recessive 47	0.08005187660455704
-4362	602459	Deafness, autosomal dominant 15	0.08005187660455704
-4363	191200	Tune deafness	0.08005187660455704
-4364	607683	Deafness, autosomal dominant 52	0.08005187660455704
-4365	606282	Deafness, autosomal dominant 24	0.08005187660455704
-4366	609952	Deafness, autosomal recessive 55	0.08005187660455704
-4367	614414	Deafness, autosomal recessive 96	0.08005187660455704
+4359	607239	Deafness, autosomal recessive 33	0.08005187660455704
+4360	609952	Deafness, autosomal recessive 55	0.08005187660455704
+4361	191200	Tune deafness	0.08005187660455704
+4362	600971	Deafness, autosomal recessive 6	0.08005187660455704
+4363	614414	Deafness, autosomal recessive 96	0.08005187660455704
+4364	606282	Deafness, autosomal dominant 24	0.08005187660455704
+4365	607683	Deafness, autosomal dominant 52	0.08005187660455704
+4366	615649	Deafness, autosomal dominant 54	0.08005187660455704
+4367	602459	Deafness, autosomal dominant 15	0.08005187660455704
 4368	617639	Deafness, autosomal recessive 107	0.08005187660455704
-4369	607239	Deafness, autosomal recessive 33	0.08005187660455704
+4369	609946	Deafness, autosomal recessive 47	0.08005187660455704
 4370	601230	Dermatitis herpetiformis, familial	0.0800502598285675
 4371	263610	Polyhydramnios, chronic idiopathic	0.08004941791296005
 4372	607644	Candidiasis, familial, 3	0.08004913479089737
@@ -4377,82 +4377,82 @@ rank	id	name	score
 4376	617936	Butyrylcholinesterase deficiency	0.08004685491323471
 4377	157400	Milia, multiple eruptive	0.08004669100046158
 4378	130100	Elastosis perforans serpiginosa	0.08004669100046158
-4379	273000	Teeth, fused	0.08004661649465561
-4380	187000	Teeth, odd shapes oflobodontia, included	0.08004661649465561
-4381	171450	Phlebectasia of lips	0.08004661649465561
-4382	147251	Incisors, fused mandibular	0.08004661649465561
-4383	168200	Paramolar tubercle of bolk	0.08004661649465561
-4384	609376	Cataract 35	0.08004570007324219
-4385	225100	Ectopia lentis	0.08004570007324219
-4386	613887	Cataract, autosomal recessive congenital 4	0.08004570007324219
-4387	115800	Cataract, crystalline coralliform	0.08004570007324219
+4379	147251	Incisors, fused mandibular	0.08004661649465561
+4380	168200	Paramolar tubercle of bolk	0.08004661649465561
+4381	187000	Teeth, odd shapes oflobodontia, included	0.08004661649465561
+4382	273000	Teeth, fused	0.08004661649465561
+4383	171450	Phlebectasia of lips	0.08004661649465561
+4384	613887	Cataract, autosomal recessive congenital 4	0.08004570007324219
+4385	609376	Cataract 35	0.08004570007324219
+4386	115800	Cataract, crystalline coralliform	0.08004570007324219
+4387	225100	Ectopia lentis	0.08004570007324219
 4388	125530	Dermal ridges, nelson syndrome	0.08004552870988846
-4389	606012	Deafness, autosomal dominant 18	0.08004492521286011
-4390	125000	Deafness, unilateral	0.08004492521286011
-4391	612644	Deafness, autosomal dominant 2B	0.08004492521286011
-4392	580000	Deafness, aminoglycoside-induced	0.08004492521286011
-4393	601412	Deafness, autosomal dominant nonsyndromic sensorineural 7	0.08004492521286011
-4394	613453	Deafness, autosomal recessive 91	0.08004492521286011
+4389	125000	Deafness, unilateral	0.08004492521286011
+4390	612644	Deafness, autosomal dominant 2B	0.08004492521286011
+4391	613453	Deafness, autosomal recessive 91	0.08004492521286011
+4392	606012	Deafness, autosomal dominant 18	0.08004492521286011
+4393	580000	Deafness, aminoglycoside-induced	0.08004492521286011
+4394	601412	Deafness, autosomal dominant nonsyndromic sensorineural 7	0.08004492521286011
 4395	128800	Ear without helix	0.08004474639892578
-4396	179500	Raindrop hypopigmentation	0.08004467189311981
+4396	145200	Hyperpigmentation of fuldauer and kuijpers	0.08004467189311981
 4397	614233	Hyperpigmentation, familial progressive, 1	0.08004467189311981
-4398	145200	Hyperpigmentation of fuldauer and kuijpers	0.08004467189311981
+4398	179500	Raindrop hypopigmentation	0.08004467189311981
 4399	102000	Acroleukopathy, symmetric	0.08004467189311981
 4400	161530	Nasal hyperpigmentation, familial transverse	0.08004467189311981
 4401	614293	Hydatidiform mole, recurrent, 2	0.08004430681467056
-4402	613969	Myopia 19, autosomal dominant	0.08004219830036163
+4402	608908	Myopia 6	0.08004219830036163
 4403	301010	Myopia 26, X-linked, female-limited	0.08004219830036163
-4404	608908	Myopia 6	0.08004219830036163
+4404	613969	Myopia 19, autosomal dominant	0.08004219830036163
 4405	609549	Nanophthalmos 2	0.08004111051559448
 4406	238950	Hyperopia, high	0.08004070073366165
 4407	144100	Hyperhidrosis, gustatory	0.08003898710012436
-4408	616705	Deafness, autosomal recessive 97	0.08003860712051392
-4409	603629	Deafness, autosomal recessive 21	0.08003860712051392
-4410	618456	Deafness, autosomal recessive 114	0.08003860712051392
-4411	602092	Deafness, neurosensory, autosomal recessive 18	0.08003860712051392
-4412	618422	Deafness, autosomal recessive 100	0.08003860712051392
-4413	607453	Deafness, autosomal dominant 44	0.08003860712051392
-4414	600792	Deafness, neurosensory, autosomal recessive 5	0.08003860712051392
-4415	221500	Deafness, neural, congenital moderate	0.08003860712051392
-4416	607039	Deafness, autosomal recessive 22	0.08003860712051392
-4417	619093	Deafness, autosomal recessive 116	0.08003860712051392
-4418	612431	Deafness, autosomal dominant 27	0.08003860712051392
-4419	603720	Deafness, autosomal recessive 16	0.08003860712051392
-4420	603010	Deafness, autosomal recessive 17	0.08003860712051392
-4421	610220	Deafness, autosomal recessive 59	0.08003860712051392
-4422	601316	Deafness, autosomal dominant nonsyndromic sensorineural 10	0.08003860712051392
+4408	400047	DEAFNESS, Y-LINKED 2	0.08003860712051392
+4409	618457	Deafness, autosomal recessive 115	0.08003860712051392
+4410	607453	Deafness, autosomal dominant 44	0.08003860712051392
+4411	606451	Deafness, autosomal dominant 30	0.08003860712051392
+4412	608652	Deafness, autosomal dominant 47	0.08003860712051392
+4413	616705	Deafness, autosomal recessive 97	0.08003860712051392
+4414	221500	Deafness, neural, congenital moderate	0.08003860712051392
+4415	618481	Deafness, autosomal recessive 99	0.08003860712051392
+4416	609965	Deafness, autosomal dominant 53	0.08003860712051392
+4417	603010	Deafness, autosomal recessive 17	0.08003860712051392
+4418	607841	Deafness, autosomal dominant 48	0.08003860712051392
+4419	605818	Deafness, autosomal recessive 27	0.08003860712051392
+4420	618422	Deafness, autosomal recessive 100	0.08003860712051392
+4421	618410	Deafness, autosomal recessive 113	0.08003860712051392
+4422	618456	Deafness, autosomal recessive 114	0.08003860712051392
 4423	618778	Deafness, autosomal dominant 75	0.08003860712051392
-4424	618410	Deafness, autosomal recessive 113	0.08003860712051392
-4425	601544	Deafness, autosomal dominant nonsyndromic sensorineural 3	0.08003860712051392
-4426	609706	Deafness, autosomal recessive 53	0.08003860712051392
-4427	400047	DEAFNESS, Y-LINKED 2	0.08003860712051392
-4428	618457	Deafness, autosomal recessive 115	0.08003860712051392
-4429	609965	Deafness, autosomal dominant 53	0.08003860712051392
-4430	616357	Deafness, autosomal dominant 40	0.08003860712051392
-4431	601868	Deafness, autosomal dominant nonsyndromic sensorineural 13	0.08003860712051392
-4432	603678	Deafness, autosomal recessive 14	0.08003860712051392
-4433	618481	Deafness, autosomal recessive 99	0.08003860712051392
-4434	605583	Deafness, autosomal dominant 25	0.08003860712051392
-4435	609941	Deafness, autosomal recessive 51	0.08003860712051392
-4436	607841	Deafness, autosomal dominant 48	0.08003860712051392
-4437	605428	Deafness, autosomal recessive 26	0.08003860712051392
-4438	608652	Deafness, autosomal dominant 47	0.08003860712051392
-4439	607084	Deafness, autosomal recessive 31	0.08003860712051392
-4440	605818	Deafness, autosomal recessive 27	0.08003860712051392
-4441	613865	Deafness, autosomal recessive 61	0.08003860712051392
-4442	601543	Deafness, autosomal dominant nonsyndromic sensorineural 12	0.08003860712051392
-4443	606451	Deafness, autosomal dominant 30	0.08003860712051392
-4444	618787	Deafness, autosomal dominant 76	0.08003860712051392
-4445	618533	Deafness, autosomal dominant 37	0.08003860712051392
-4446	616707	Deafness, autosomal dominant 68	0.08003860712051392
-4447	616697	Deafness, autosomal dominant 69	0.08003860712051392
+4424	607084	Deafness, autosomal recessive 31	0.08003860712051392
+4425	603678	Deafness, autosomal recessive 14	0.08003860712051392
+4426	613865	Deafness, autosomal recessive 61	0.08003860712051392
+4427	600792	Deafness, neurosensory, autosomal recessive 5	0.08003860712051392
+4428	601316	Deafness, autosomal dominant nonsyndromic sensorineural 10	0.08003860712051392
+4429	603720	Deafness, autosomal recessive 16	0.08003860712051392
+4430	605428	Deafness, autosomal recessive 26	0.08003860712051392
+4431	619093	Deafness, autosomal recessive 116	0.08003860712051392
+4432	601544	Deafness, autosomal dominant nonsyndromic sensorineural 3	0.08003860712051392
+4433	601868	Deafness, autosomal dominant nonsyndromic sensorineural 13	0.08003860712051392
+4434	618533	Deafness, autosomal dominant 37	0.08003860712051392
+4435	610220	Deafness, autosomal recessive 59	0.08003860712051392
+4436	618787	Deafness, autosomal dominant 76	0.08003860712051392
+4437	612431	Deafness, autosomal dominant 27	0.08003860712051392
+4438	601543	Deafness, autosomal dominant nonsyndromic sensorineural 12	0.08003860712051392
+4439	616357	Deafness, autosomal dominant 40	0.08003860712051392
+4440	602092	Deafness, neurosensory, autosomal recessive 18	0.08003860712051392
+4441	607039	Deafness, autosomal recessive 22	0.08003860712051392
+4442	616707	Deafness, autosomal dominant 68	0.08003860712051392
+4443	605583	Deafness, autosomal dominant 25	0.08003860712051392
+4444	609706	Deafness, autosomal recessive 53	0.08003860712051392
+4445	603629	Deafness, autosomal recessive 21	0.08003860712051392
+4446	616697	Deafness, autosomal dominant 69	0.08003860712051392
+4447	609941	Deafness, autosomal recessive 51	0.08003860712051392
 4448	601885	Cataract, zonular pulverulent 3	0.08003847301006317
 4449	145680	Dystransthyretinemic euthyroidal hyperthyroxinemia	0.08003843575716019
 4450	206800	Anonychia congenita	0.08003821969032288
 4451	149300	Koilonychia, hereditary	0.0800379291176796
-4452	167900	Papillomatosis, familial cutaneous	0.08003688603639603
+4452	612353	Porokeratosis 6, disseminated superficial Actinic type	0.08003688603639603
 4453	100600	Acanthosis nigricans	0.08003688603639603
-4454	612353	Porokeratosis 6, disseminated superficial Actinic type	0.08003688603639603
+4454	167900	Papillomatosis, familial cutaneous	0.08003688603639603
 4455	163600	Nipples inverted	0.08003675192594528
 4456	145701	Hypertrichosis universalis congenita, Ambras type	0.08003608882427216
 4457	601616	Iris pigment epithelium anomalies	0.08003585785627365
@@ -4461,25 +4461,25 @@ rank	id	name	score
 4460	124300	Darwinian point of pinna	0.08003513514995575
 4461	100820	Achoo syndrome	0.08003482967615128
 4462	268025	Retinitis pigmentosa, late-adult onset	0.08003482222557068
-4463	613575	Retinitis pigmentosa 55	0.08003482222557068
-4464	615565	Retinitis pigmentosa 67	0.08003482222557068
+4463	615565	Retinitis pigmentosa 67	0.08003482222557068
+4464	613575	Retinitis pigmentosa 55	0.08003482222557068
 4465	129000	Earring holes, natural	0.08003433048725128
 4466	180350	Rheumatoid nodulosis	0.08003415912389755
 4467	275355	Squamous cell carcinoma, head and neck	0.08003411442041397
 4468	184500	Steatocystoma multiplex	0.08003411442041397
 4469	600165	Nanophthalmos 1	0.08003408461809158
-4470	612643	Deafness, autosomal dominant 3B	0.08003385365009308
-4471	154300	Malocclusion due to protuberant upper front teeth	0.08003385365009308
-4472	613079	Deafness, autosomal recessive 77	0.08003385365009308
-4473	608645	Deafness, autosomal dominant 31	0.08003385365009308
+4470	613079	Deafness, autosomal recessive 77	0.08003385365009308
+4471	608645	Deafness, autosomal dominant 31	0.08003385365009308
+4472	154300	Malocclusion due to protuberant upper front teeth	0.08003385365009308
+4473	612643	Deafness, autosomal dominant 3B	0.08003385365009308
 4474	620320	Hematuria, benign familial, 2	0.08003370463848114
 4475	217500	Corneal dystrophy, band-shaped	0.08003349602222443
 4476	615293	Myofibromatosis, infantile 2	0.08003320544958115
 4477	145300	Hypersensitivity pneumonitis, familial	0.08003319799900055
 4478	616851	Cataract 45	0.0800318717956543
 4479	614422	Cataract, congenital, cerulean type, 5	0.0800318717956543
-4480	115700	Cataract, crystalline aculeiform	0.0800318717956543
-4481	116700	Cataract 13 with adult i phenotype	0.0800318717956543
+4480	116700	Cataract 13 with adult i phenotype	0.0800318717956543
+4481	115700	Cataract, crystalline aculeiform	0.0800318717956543
 4482	191550	Ureter, bifid or double	0.08003177493810654
 4483	617320	Ichthyosis, congenital, autosomal recessive 12	0.08003094047307968
 4484	119550	Cleft palate-lateral synechia syndrome	0.08003072440624237
@@ -4499,28 +4499,28 @@ rank	id	name	score
 4498	163000	Nevi flammei, familial multiple	0.08002772927284241
 4499	192100	Uvula, bifid	0.08002761006355286
 4500	615360	Leber congenital amaurosis 17	0.08002738654613495
-4501	619086	Deafness, autosomal dominant 79	0.08002733439207077
-4502	600652	Deafness, autosomal dominant nonsyndromic sensorineural 4	0.08002733439207077
+4501	600652	Deafness, autosomal dominant nonsyndromic sensorineural 4	0.08002733439207077
+4502	619086	Deafness, autosomal dominant 79	0.08002733439207077
 4503	600994	Deafness, autosomal dominant nonsyndromic sensorineural 5	0.08002733439207077
 4504	620442	Breast-ovarian cancer, familial, susceptibility to, 5	0.08002687245607376
 4505	187050	Teeth present at birth	0.08002645522356033
 4506	265200	Pulmonary bullae causing pneumothorax	0.08002636581659317
 4507	600631	Enuresis, nocturnal, 1	0.08002631366252899
 4508	600808	Enuresis, nocturnal, 2	0.08002631366252899
-4509	608264	Deafness, congenital neurosensory, autosomal recessive 40	0.08002624660730362
+4509	612433	Deafness, autosomal recessive 45	0.08002624660730362
 4510	608219	Deafness, congenital neurosensory, autosomal recessive 38	0.08002624660730362
-4511	612433	Deafness, autosomal recessive 45	0.08002624660730362
-4512	610143	Deafness, autosomal recessive 62	0.08002624660730362
-4513	610154	Deafness, autosomal recessive 44	0.08002624660730362
-4514	608265	Deafness, congenital neurosensory, autosomal recessive 39	0.08002624660730362
-4515	613685	Deafness, autosomal recessive 83	0.08002624660730362
-4516	613392	Deafness, autosomal recessive 85	0.08002624660730362
-4517	612789	Deafness, autosomal recessive 71	0.08002624660730362
+4511	608264	Deafness, congenital neurosensory, autosomal recessive 40	0.08002624660730362
+4512	610154	Deafness, autosomal recessive 44	0.08002624660730362
+4513	608265	Deafness, congenital neurosensory, autosomal recessive 39	0.08002624660730362
+4514	612789	Deafness, autosomal recessive 71	0.08002624660730362
+4515	613392	Deafness, autosomal recessive 85	0.08002624660730362
+4516	613685	Deafness, autosomal recessive 83	0.08002624660730362
+4517	610143	Deafness, autosomal recessive 62	0.08002624660730362
 4518	400003	Deleted in azoospermia	0.08002612739801407
 4519	600166	Hyperparathyroidism, primary, caused by water clear cell hyperplasia	0.08002608269453049
 4520	615892	Orofacial cleft 14	0.0800260528922081
-4521	620177	Hypotrichosis 15	0.08002594858407974
-4522	146520	Hypotrichosis 2	0.08002594858407974
+4521	146520	Hypotrichosis 2	0.08002594858407974
+4522	620177	Hypotrichosis 15	0.08002594858407974
 4523	600975	Glaucoma 3, primary infantile, B	0.08002574741840363
 4524	163500	Night blindness, congenital stationary, autosomal dominant 2	0.08002571016550064
 4525	610444	Night blindness, congenital stationary, autosomal dominant 3	0.08002571016550064
@@ -4548,28 +4548,28 @@ rank	id	name	score
 4547	191600	Ureter, cancer of	0.08002223074436188
 4548	145100	Hyperpigmentation of eyelids	0.08002140372991562
 4549	185200	Striae distensae, familial	0.08002135902643204
-4550	126300	DISTICHIASIS	0.08002135902643204
-4551	178995	Pruritic urticarial papules and plaques of pregnancy	0.08002135902643204
-4552	190800	TRISTICHIASIS	0.08002135902643204
+4550	178995	Pruritic urticarial papules and plaques of pregnancy	0.08002135902643204
+4551	190800	TRISTICHIASIS	0.08002135902643204
+4552	126300	DISTICHIASIS	0.08002135902643204
 4553	614826	Nystagmus 7, congenital, autosomal dominant	0.08002126961946487
 4554	615429	Deafness, autosomal recessive 88	0.0800212100148201
 4555	553000	Oncocytoma	0.08002015203237534
-4556	614628	Keratoconus 8	0.08001962304115295
-4557	614629	Keratoconus 7	0.08001962304115295
-4558	614623	Keratoconus 6	0.08001962304115295
-4559	614622	Keratoconus 5	0.08001962304115295
+4556	614623	Keratoconus 6	0.08001962304115295
+4557	614622	Keratoconus 5	0.08001962304115295
+4558	614628	Keratoconus 8	0.08001962304115295
+4559	614629	Keratoconus 7	0.08001962304115295
 4560	615674	Dowling-Degos disease 3	0.08001921325922012
 4561	146450	Hypospadias 3, autosomal	0.0800185278058052
 4562	128700	Preauricular fistulae, congenital	0.08001849800348282
 4563	114030	Cafe-Au-Lait spots, multiple	0.08001840859651566
 4564	114600	Canine teeth, absence of upper permanent	0.08001817017793655
 4565	155240	Thyroid carcinoma, familial medullary	0.08001736551523209
-4566	616535	Thyroid cancer, nonmedullary, 5	0.08001736551523209
-4567	606240	Thyroid cancer, nonmedullary, 3	0.08001736551523209
+4566	606240	Thyroid cancer, nonmedullary, 3	0.08001736551523209
+4567	616535	Thyroid cancer, nonmedullary, 5	0.08001736551523209
 4568	617075	Nasopharyngeal carcinoma, susceptibility to, 3	0.0800161138176918
 4569	302400	Central incisors, absence of	0.08001527935266495
-4570	194090	Wilms tumor 3	0.08001448959112167
-4571	601363	Wilms tumor 4	0.08001448959112167
+4570	601363	Wilms tumor 4	0.08001448959112167
+4571	194090	Wilms tumor 3	0.08001448959112167
 4572	615554	Multiple fibroadenomas of the breast	0.08001434057950974
 4573	144110	Hyperhidrosis palmaris et plantaris	0.08001388609409332
 4574	272700	TAURODONTISM	0.08001330494880676
@@ -4580,10 +4580,10 @@ rank	id	name	score
 4579	166950	Teratoma, ovarian	0.0800095945596695
 4580	166970	Ovarian fibromata	0.0800093337893486
 4581	166760	Otitis media, susceptibility to	0.080006904900074
-4582	614391	Pregnancy loss, recurrent, susceptibility to, 3	0.07999999821186066
-4583	614389	Pregnancy loss, recurrent, susceptibility to, 1	0.07999999821186066
+4582	614595	Preeclampsia/eclampsia 5	0.07999999821186066
+4583	614391	Pregnancy loss, recurrent, susceptibility to, 3	0.07999999821186066
 4584	614390	Pregnancy loss, recurrent, susceptibility to, 2	0.07999999821186066
-4585	614595	Preeclampsia/eclampsia 5	0.07999999821186066
+4585	614389	Pregnancy loss, recurrent, susceptibility to, 1	0.07999999821186066
 4586	133900	Hemifacial hyperplasia	0.07999753206968307
 4587	614890	Immunodeficiency 29	0.07999329268932343
 4588	174700	Polydactyly, preaxial IV	0.07998382300138474
@@ -4919,9 +4919,9 @@ rank	id	name	score
 4918	173600	Pneumothorax, primary spontaneous	0.0771314725279808
 4919	300852	Intellectual developmental disorder, X-linked 88	0.07713105529546738
 4920	613603	Chromosome 4q32.1-q32.2 triplication syndrome	0.07712730765342712
-4921	194071	Multiple tumor-associated chromosome region 1	0.07712005078792572
+4921	194070	Wilms tumor 1	0.07712005078792572
 4922	601583	Wilms tumor 5	0.07712005078792572
-4923	194070	Wilms tumor 1	0.07712005078792572
+4923	194071	Multiple tumor-associated chromosome region 1	0.07712005078792572
 4924	176807	Prostate cancer	0.07711778581142426
 4925	616039	Charcot-Marie-Tooth disease, recessive intermediate D	0.07711738348007202
 4926	608089	Endometrial carcinoma, somatic	0.07711657136678696
@@ -4963,20 +4963,20 @@ rank	id	name	score
 4962	612645	Deafness, autosomal recessive 1B	0.07697724550962448
 4963	617524	Erythrokeratodermia variabilis et progressiva 2	0.07697634398937225
 4964	608394	Deafness, autosomal dominant 43	0.07697580754756927
-4965	616340	Deafness, autosomal dominant 67	0.07697580754756927
-4966	618003	Deafness, autosomal recessive 57	0.07697580754756927
-4967	603098	Deafness, autosomal recessive 13	0.07697580754756927
-4968	604060	Deafness, autosomal recessive 20	0.07697580754756927
-4969	400043	DEAFNESS, Y-LINKED 1	0.07697580754756927
+4965	618003	Deafness, autosomal recessive 57	0.07697580754756927
+4966	616340	Deafness, autosomal dominant 67	0.07697580754756927
+4967	400043	DEAFNESS, Y-LINKED 1	0.07697580754756927
+4968	603098	Deafness, autosomal recessive 13	0.07697580754756927
+4969	604060	Deafness, autosomal recessive 20	0.07697580754756927
 4970	603964	Deafness, autosomal dominant 16	0.07697529345750809
 4971	613285	Deafness, autosomal recessive 25	0.07697466760873795
 4972	612096	Otosclerosis 8	0.07697433978319168
 4973	148350	Keratoderma, palmoplantar, with deafness	0.07697369158267975
 4974	619174	Deafness, autosomal recessive 117	0.07697369158267975
 4975	618434	Deafness, autosomal recessive 94	0.07697318494319916
-4976	614617	Deafness, autosomal recessive 86	0.07697296142578125
+4976	610248	Deafness, autosomal recessive 65	0.07697296142578125
 4977	620283	Deafness, autosomal dominant 88	0.07697296142578125
-4978	610248	Deafness, autosomal recessive 65	0.07697296142578125
+4978	614617	Deafness, autosomal recessive 86	0.07697296142578125
 4979	614899	Deafness, autosomal recessive 93	0.07697296142578125
 4980	609439	Deafness, autosomal recessive 48	0.07697241008281708
 4981	257400	Nystagmus, congenital motor, autosomal recessive	0.07697224617004395
@@ -5011,8 +5011,8 @@ rank	id	name	score
 5010	300355	Mental retardation, X-linked 73	0.07696405053138733
 5011	614167	Myopia 21, autosomal dominant	0.07696365565061569
 5012	615946	Myopia 24, autosomal dominant	0.07696365565061569
-5013	188560	Thyroid hormone plasma membrane transport defect	0.0769626796245575
-5014	147892	Deiodinase, iodothyronine, type I	0.0769626796245575
+5013	147892	Deiodinase, iodothyronine, type I	0.0769626796245575
+5014	188560	Thyroid hormone plasma membrane transport defect	0.0769626796245575
 5015	613704	Microphthalmia, isolated 7	0.07696260511875153
 5016	610265	Deafness, autosomal recessive 67	0.07696252316236496
 5017	601202	Cataract, anterior polar, 2	0.07696214318275452
@@ -5026,22 +5026,22 @@ rank	id	name	score
 5025	165680	Ossicular malformations, familial	0.07696115225553513
 5026	130710	Emphysema, congenital lobar	0.07696100324392319
 5027	139000	Granulosis rubra nasi	0.07696056365966797
-5028	619226	Blistering, acantholytic, of oral and laryngeal mucosa	0.07696019858121872
-5029	608641	Deafness, autosomal dominant nonsyndromic sensorineural 28	0.07696019858121872
-5030	609533	Deafness, autosomal recessive 23	0.07696019858121872
-5031	612642	Deafness, autosomal dominant 59	0.07696019858121872
-5032	610419	Deafness, autosomal recessive 68	0.07696019858121872
-5033	618257	Deafness, autosomal recessive 112	0.07696019858121872
-5034	614861	Deafness, autosomal recessive 98	0.07696019858121872
-5035	620238	Deafness, autosomal recessive 120	0.07696019858121872
-5036	610212	Deafness, autosomal recessive 66	0.07696019858121872
+5028	618257	Deafness, autosomal recessive 112	0.07696019858121872
+5029	610419	Deafness, autosomal recessive 68	0.07696019858121872
+5030	608641	Deafness, autosomal dominant nonsyndromic sensorineural 28	0.07696019858121872
+5031	609533	Deafness, autosomal recessive 23	0.07696019858121872
+5032	614861	Deafness, autosomal recessive 98	0.07696019858121872
+5033	620238	Deafness, autosomal recessive 120	0.07696019858121872
+5034	610212	Deafness, autosomal recessive 66	0.07696019858121872
+5035	619226	Blistering, acantholytic, of oral and laryngeal mucosa	0.07696019858121872
+5036	612642	Deafness, autosomal dominant 59	0.07696019858121872
 5037	101850	ACROKERATOELASTOIDOSIS	0.07696016132831573
 5038	600360	Aplasia cutis congenita of limbs, recessive	0.07695997506380081
 5039	614237	Hypotrichosis 9	0.07695984095335007
 5040	145700	Hypertrichosis universalis	0.07695966213941574
 5041	175860	Porokeratosis punctata palmaris et plantaris	0.07695920765399933
-5042	605472	Usher syndrome, type IIC	0.07695888727903366
-5043	276901	Usher syndrome, type IIA	0.07695888727903366
+5042	276901	Usher syndrome, type IIA	0.07695888727903366
+5043	605472	Usher syndrome, type IIC	0.07695888727903366
 5044	614170	Brittle cornea syndrome 2	0.07695874571800232
 5045	300085	Cone-Rod dystrophy, X-linked, 2	0.0769582986831665
 5046	300155	Retinitis pigmentosa 24	0.0769582986831665
@@ -5068,40 +5068,40 @@ rank	id	name	score
 5067	614190	Pigmented nodular adrenocortical disease, primary, 3	0.07695106416940689
 5068	615591	Macular degeneration, age-related, 15, susceptibility to	0.076950803399086
 5069	150300	Larynx, congenital partial atresia of	0.07695071399211884
-5070	106600	Tooth agenesis, selective, 1	0.07695023715496063
-5071	265430	Pulmonary hypoplasia, primary	0.07695023715496063
+5070	265430	Pulmonary hypoplasia, primary	0.07695023715496063
+5071	106600	Tooth agenesis, selective, 1	0.07695023715496063
 5072	135550	Fibromatosis, gingival, with progressive deafness	0.07695011049509048
-5073	619258	Spermatogenic failure 53	0.07695003598928452
-5074	618112	Spermatogenic failure 31	0.07695003598928452
+5073	618112	Spermatogenic failure 31	0.07695003598928452
+5074	619258	Spermatogenic failure 53	0.07695003598928452
 5075	618353	Oocyte maturation defect 6	0.07694899290800095
-5076	620500	Spermatogenic failure 87	0.07694883644580841
-5077	617214	Spermatogenic failure 17	0.07694883644580841
+5076	617214	Spermatogenic failure 17	0.07694883644580841
+5077	620500	Spermatogenic failure 87	0.07694883644580841
 5078	610153	Deafness, autosomal recessive 49	0.07694831490516663
 5079	601449	Deafness, progressive, with stapes fixation	0.07694827765226364
 5080	615841	Spermatogenic failure 13	0.07694820314645767
-5081	617712	Oocyte maturation defect 3	0.07694777101278305
-5082	600316	Deafness, neurosensory, autosomal recessive 3	0.07694777101278305
-5083	611022	Deafness, autosomal recessive, 24	0.07694777101278305
-5084	620333	Oocyte/zygote/embryo maturation arrest 19	0.07694777101278305
-5085	619643	Oocyte maturation defect 11	0.07694777101278305
-5086	620332	Oocyte/zygote/embryo maturation arrest 18	0.07694777101278305
+5081	620332	Oocyte/zygote/embryo maturation arrest 18	0.07694777101278305
+5082	617712	Oocyte maturation defect 3	0.07694777101278305
+5083	619643	Oocyte maturation defect 11	0.07694777101278305
+5084	600316	Deafness, neurosensory, autosomal recessive 3	0.07694777101278305
+5085	620333	Oocyte/zygote/embryo maturation arrest 19	0.07694777101278305
+5086	611022	Deafness, autosomal recessive, 24	0.07694777101278305
 5087	609823	Deafness, autosomal recessive 28	0.07694726437330246
 5088	611571	Otosclerosis 4	0.07694680243730545
 5089	616724	Tooth agenesis, selective, 7	0.07694576680660248
 5090	600269	Short tarsus with absence of lower eyelashes	0.0769457295536995
 5091	138800	Goiter, multinodular 1	0.07694519311189651
-5092	606660	Uveal melanoma, susceptibility to, 1	0.07694488018751144
-5093	606661	Melanoma, uveal, susceptibility to, 2	0.07694488018751144
+5092	606661	Melanoma, uveal, susceptibility to, 2	0.07694488018751144
+5093	606660	Uveal melanoma, susceptibility to, 1	0.07694488018751144
 5094	614149	Nail disorder, nonsyndromic congenital, 9	0.07694458216428757
 5095	600082	Prostatic hyperplasia, benign	0.07694439589977264
 5096	164800	Nail disorder, nonsyndromic congenital, 5	0.07694409787654877
 5097	120500	Commissural lip pits	0.0769435465335846
 5098	610420	Preauricular tag, isolated, autosomal dominant, 1	0.07694348692893982
-5099	127400	Dyschromatosis symmetrica hereditaria 1	0.07694155722856522
-5100	127500	Dyschromatosis universalis hereditaria	0.07694155722856522
+5099	127500	Dyschromatosis universalis hereditaria	0.07694155722856522
+5100	127400	Dyschromatosis symmetrica hereditaria 1	0.07694155722856522
 5101	619588	Epidermolysis bullosa simplex 2B, generalized intermediate	0.07693909108638763
-5102	600231	Palmoplantar keratoderma, Bothnian type	0.07693573087453842
-5103	600962	Palmoplantar keratoderma, nonepidermolytic	0.07693573087453842
+5102	600962	Palmoplantar keratoderma, nonepidermolytic	0.07693573087453842
+5103	600231	Palmoplantar keratoderma, Bothnian type	0.07693573087453842
 5104	601518	Prostate cancer, hereditary, 1	0.07693473994731903
 5105	162091	Schwannomatosis	0.07693164795637131
 5106	611630	Epilepsy, familial temporal lobe, 3	0.0769132673740387
@@ -5374,8 +5374,8 @@ rank	id	name	score
 5373	610227	Seborrhea-Like dermatitis with psoriasiform elements	0.07447216659784317
 5374	605074	Renal cell carcinoma, papillary, 1, familial and somatic	0.07444249093532562
 5375	202010	Adrenal hyperplasia, congenital, due to 11-beta-hydroxylase deficiency	0.07443888485431671
-5376	613985	BETA-THALASSEMIA	0.07443328201770782
-5377	604131	ALPHA-THALASSEMIA	0.07443328201770782
+5376	604131	ALPHA-THALASSEMIA	0.07443328201770782
+5377	613985	BETA-THALASSEMIA	0.07443328201770782
 5378	608710	Granulomatosis with polyangiitis	0.07442166656255722
 5379	615697	Epilepsy, familial temporal lobe, 6	0.07442130893468857
 5380	308830	Keratosis follicularis, dwarfism, and cerebral atrophy	0.07441794872283936
@@ -5423,8 +5423,8 @@ rank	id	name	score
 5422	613827	Retinitis pigmentosa 48	0.07413026690483093
 5423	126600	Doyne honeycomb retinal dystrophy	0.07413016259670258
 5424	601067	Usher syndrome, type ID	0.07412857562303543
-5425	611597	Cataract, autosomal dominant, multiple types 1	0.07412820309400558
-5426	156900	Microphthalmia, isolated, with corectopia	0.07412820309400558
+5425	156900	Microphthalmia, isolated, with corectopia	0.07412820309400558
+5426	611597	Cataract, autosomal dominant, multiple types 1	0.07412820309400558
 5427	600101	Deafness, autosomal dominant nonsyndromic sensorineural 2	0.07412654906511307
 5428	619832	Auditory neuropathy, autosomal dominant 3	0.07412654906511307
 5429	601317	Deafness, autosomal dominant nonsyndromic sensorineural 11	0.07412490993738174
@@ -5435,8 +5435,8 @@ rank	id	name	score
 5434	613718	Deafness, autosomal recessive 74	0.07412444055080414
 5435	601386	Deafness, autosomal recessive 12	0.07412397116422653
 5436	604356	Duane retraction syndrome 2	0.07412322610616684
-5437	618094	Deafness, autosomal recessive 110	0.07412281632423401
-5438	619500	Deafness, autosomal dominant 81	0.07412281632423401
+5437	619500	Deafness, autosomal dominant 81	0.07412281632423401
+5438	618094	Deafness, autosomal recessive 110	0.07412281632423401
 5439	617605	Deafness, autosomal dominant 71	0.07412281632423401
 5440	618140	Deafness, autosomal dominant 74	0.07412281632423401
 5441	618345	Retinitis pigmentosa 85	0.07412280887365341
@@ -5482,10 +5482,10 @@ rank	id	name	score
 5481	178900	Pupillary membrane, persistence of	0.0741102397441864
 5482	610425	Cataract 23	0.07411020994186401
 5483	188550	Thyroid cancer, nonmedullary, 1	0.0741100162267685
-5484	617663	Deafness, autosomal dominant 73	0.07410982251167297
-5485	609646	Deafness, neurosensory, autosomal recessive 42	0.07410982251167297
-5486	601072	Deafness, autosomal recessive 8/10	0.07410982251167297
-5487	616969	Deafness, autosomal dominant 66	0.07410982251167297
+5484	601072	Deafness, autosomal recessive 8/10	0.07410982251167297
+5485	616969	Deafness, autosomal dominant 66	0.07410982251167297
+5486	609646	Deafness, neurosensory, autosomal recessive 42	0.07410982251167297
+5487	617663	Deafness, autosomal dominant 73	0.07410982251167297
 5488	609254	Senior-Loken syndrome 5	0.07410971075296402
 5489	221740	Deafness-Oligodontia syndrome	0.07410938292741776
 5490	615402	Dyschromatosis universalis hereditaria 3	0.07410907745361328
@@ -5504,8 +5504,8 @@ rank	id	name	score
 5503	605387	Cataract 31, multiple types	0.0741056352853775
 5504	613824	Nephronophthisis 9	0.07410521060228348
 5505	611498	Nephronophthisis 7	0.07410519570112228
-5506	620383	Oocyte/zygote/embryo maturation arrest 20	0.07410489022731781
-5507	620319	Oocyte/zygote/embryo maturation arrest 17	0.07410489022731781
+5506	620319	Oocyte/zygote/embryo maturation arrest 17	0.07410489022731781
+5507	620383	Oocyte/zygote/embryo maturation arrest 20	0.07410489022731781
 5508	608996	Premature ovarian failure 3	0.07410460710525513
 5509	119530	Orofacial cleft 1	0.0741044357419014
 5510	273150	Testes, rudimentary	0.07410404086112976
@@ -5524,21 +5524,21 @@ rank	id	name	score
 5523	102530	Spermatogenic failure 6	0.07410117983818054
 5524	620154	Oocyte maturation defect 13	0.07410112768411636
 5525	613957	Spermatogenic failure 8	0.0741010382771492
-5526	415000	Spermatogenic failure, Y-linked, 2	0.07410042732954025
-5527	619202	Spermatogenic failure 52	0.07410042732954025
-5528	617707	Spermatogenic failure 23	0.07410042732954025
-5529	270960	Spermatogenic failure 4	0.07410042732954025
-5530	619380	Spermatogenic failure 55	0.07410012185573578
-5531	400042	Spermatogenic failure, Y-linked, 1	0.07410012185573578
+5526	619202	Spermatogenic failure 52	0.07410042732954025
+5527	617707	Spermatogenic failure 23	0.07410042732954025
+5528	270960	Spermatogenic failure 4	0.07410042732954025
+5529	415000	Spermatogenic failure, Y-linked, 2	0.07410042732954025
+5530	400042	Spermatogenic failure, Y-linked, 1	0.07410012185573578
+5531	619380	Spermatogenic failure 55	0.07410012185573578
 5532	606766	Spermatogenic failure 3	0.07410012185573578
-5533	617961	Spermatogenic failure 26	0.07410003244876862
-5534	619799	Spermatogenic failure 66	0.07410003244876862
-5535	619826	Spermatogenic failure 69	0.07410003244876862
-5536	613958	Spermatogenic failure 9	0.07410003244876862
-5537	619803	Spermatogenic failure 67	0.07410003244876862
+5533	619803	Spermatogenic failure 67	0.07410003244876862
+5534	617961	Spermatogenic failure 26	0.07410003244876862
+5535	613958	Spermatogenic failure 9	0.07410003244876862
+5536	619799	Spermatogenic failure 66	0.07410003244876862
+5537	619826	Spermatogenic failure 69	0.07410003244876862
 5538	612555	Breast-Ovarian cancer, familial, susceptibility to, 2	0.07409969717264175
-5539	616968	Deafness, autosomal dominant 70	0.07409938424825668
-5540	618145	Deafness, autosomal recessive 111	0.07409938424825668
+5539	618145	Deafness, autosomal recessive 111	0.07409938424825668
+5540	616968	Deafness, autosomal dominant 70	0.07409938424825668
 5541	615774	Oocyte maturation defect	0.07409902662038803
 5542	617996	Oocyte maturation defect 5	0.07409890741109848
 5543	620276	Oocyte/zygote/embryo maturation arrest 14	0.07409890741109848
@@ -5601,8 +5601,8 @@ rank	id	name	score
 5600	616939	Chorea, childhood-onset, with psychomotor retardation	0.07370398938655853
 5601	617044	Short stature, developmental delay, and congenital heart defects	0.07369572669267654
 5602	613391	Deafness, autosomal recessive 84	0.07368354499340057
-5603	614990	Usher syndrome, type IK	0.07368151098489761
-5604	614869	Usher syndrome, type IJ	0.07368151098489761
+5603	614869	Usher syndrome, type IJ	0.07368151098489761
+5604	614990	Usher syndrome, type IK	0.07368151098489761
 5605	616362	Mental retardation, autosomal dominant 36	0.07367637753486633
 5606	254110	Muscular dystrophy, limb-girdle, type 2H	0.07367464154958725
 5607	616270	Amelogenesis imperfecta, type IF	0.07366862893104553
@@ -5642,8 +5642,8 @@ rank	id	name	score
 5641	250410	Retinitis pigmentosa with or without skeletal anomalies	0.07345329225063324
 5642	601471	Facial paresis, hereditary congenital, 1	0.0734475627541542
 5643	253400	Spinal muscular atrophy, type III	0.07343024015426636
-5644	618248	Mitochondrial complex I deficiency, nuclear type 27	0.07340530306100845
-5645	168605	Perry syndrome	0.07340530306100845
+5644	168605	Perry syndrome	0.07340530306100845
+5645	618248	Mitochondrial complex I deficiency, nuclear type 27	0.07340530306100845
 5646	300062	Mental retardation, X-linked 14	0.07340452820062637
 5647	224400	Dyssegmental dysplasia, Rolland-Desbuquois type	0.0733821913599968
 5648	256020	Focal segmental glomerulosclerosis 10	0.07338080555200577
@@ -5901,8 +5901,8 @@ rank	id	name	score
 5900	603383	Glaucoma 1, open angle, F	0.07147831469774246
 5901	600060	Deafness, neurosensory, autosomal recessive 2	0.07147806882858276
 5902	141350	Hemifacial hyperplasia with strabismus	0.07147768884897232
-5903	617606	Deafness, autosomal dominant 72	0.07147753238677979
-5904	620384	Auditory neuropathy, autosomal dominant 2	0.07147753238677979
+5903	620384	Auditory neuropathy, autosomal dominant 2	0.07147753238677979
+5904	617606	Deafness, autosomal dominant 72	0.07147753238677979
 5905	175900	Porokeratosis 3, multiple types	0.07147736102342606
 5906	616042	Deafness, autosomal recessive 103	0.07147715985774994
 5907	620281	Deafness, autosomal dominant 87	0.07147704064846039
@@ -5911,8 +5911,8 @@ rank	id	name	score
 5910	278200	Woolly hair, hypotrichosis, everted lower lip, and outstanding ears	0.07147630304098129
 5911	616044	Deafness, autosomal dominant 65	0.0714762881398201
 5912	619553	Deafness, autosomal recessive 118, with cochlear aplasia	0.07147584110498428
-5913	615629	Deafness, autosomal dominant 56	0.0714755728840828
-5914	600974	Deafness, neurosensory, autosomal recessive 7	0.0714755728840828
+5913	600974	Deafness, neurosensory, autosomal recessive 7	0.0714755728840828
+5914	615629	Deafness, autosomal dominant 56	0.0714755728840828
 5915	136500	Focal facial dermal dysplasia 1, Brauer type	0.07147552073001862
 5916	619781	Myopia 28, autosomal recessive	0.07147538661956787
 5917	126070	Dilution, pigmentary	0.07147513329982758
@@ -5947,16 +5947,16 @@ rank	id	name	score
 5946	615274	Cataract 15, multiple types	0.07145905494689941
 5947	231300	Glaucoma 3, primary congenital, A	0.07145886868238449
 5948	619808	Deafness, autosomal dominant 83	0.07145880162715912
-5949	619831	Spermatogenic failure 71	0.07145817577838898
-5950	618115	Spermatogenic failure 32	0.07145817577838898
+5949	618115	Spermatogenic failure 32	0.07145817577838898
+5950	619831	Spermatogenic failure 71	0.07145817577838898
 5951	116300	Cataract 30, multiple types	0.07145709544420242
 5952	619145	Spermatogenic failure 50	0.0714564099907875
 5953	618594	Nephrotic syndrome, type 21	0.07145632058382034
 5954	620245	Episodic kinesigenic dyskinesia 3	0.07145622372627258
-5955	619646	Spermatogenic failure 60	0.07145518809556961
-5956	619937	Spermatogenic failure 74	0.07145518809556961
-5957	619878	Spermatogenic failure 73	0.07145518809556961
-5958	619645	Spermatogenic failure 59	0.07145518809556961
+5955	619878	Spermatogenic failure 73	0.07145518809556961
+5956	619645	Spermatogenic failure 59	0.07145518809556961
+5957	619646	Spermatogenic failure 60	0.07145518809556961
+5958	619937	Spermatogenic failure 74	0.07145518809556961
 5959	258150	Spermatogenic failure 1	0.07145516574382782
 5960	300985	Vas deferens, congenital bilateral aplasia of, X-linked	0.07145513594150543
 5961	617706	Spermatogenic failure 22	0.07145486772060394
@@ -6244,8 +6244,8 @@ rank	id	name	score
 6243	617315	Anterior segment dysgenesis 6, multiple subtypes	0.06901323050260544
 6244	616722	Retinal dystrophy and iris coloboma with or without congenital cataract	0.06901320815086365
 6245	618078	Ovarian dysgenesis 6	0.0690130665898323
-6246	614211	Deafness, autosomal dominant 33	0.06901279091835022
-6247	614152	Deafness, autosomal dominant 64	0.06901279091835022
+6246	614152	Deafness, autosomal dominant 64	0.06901279091835022
+6247	614211	Deafness, autosomal dominant 33	0.06901279091835022
 6248	268010	Retinitis pigmentosa inversa with deafness	0.06901275366544724
 6249	614928	Ectodermal dysplasia 6, Hair/nail type	0.06901240348815918
 6250	619593	Cataract 49	0.06901153922080994
@@ -6281,8 +6281,8 @@ rank	id	name	score
 6280	618670	Spermatogenic failure 41	0.06899318844079971
 6281	619094	Spermatogenic failure 45	0.06899303197860718
 6282	618751	Spermatogenic failure 43	0.068992979824543
-6283	620170	Spermatogenic failure 78	0.06899294257164001
-6284	619108	Spermatogenic failure 48	0.06899294257164001
+6283	619108	Spermatogenic failure 48	0.06899294257164001
+6284	620170	Spermatogenic failure 78	0.06899294257164001
 6285	619828	Spermatogenic failure 70	0.06899264454841614
 6286	619696	Spermatogenic failure 64	0.06899256259202957
 6287	620196	Spermatogenic failure 79	0.06899230182170868
@@ -6593,12 +6593,12 @@ rank	id	name	score
 6592	619263	Nephrotic syndrome, type 24	0.06669483333826065
 6593	618664	Spermatogenic failure 40	0.0666944831609726
 6594	301106	Spermatogenic failure, X-linked, 7	0.066693514585495
-6595	617592	Spermatogenic failure 19	0.0666932687163353
+6595	620353	Spermatogenic failure 82	0.0666932687163353
 6596	619144	Spermatogenic failure 49	0.0666932687163353
-6597	620353	Spermatogenic failure 82	0.0666932687163353
+6597	617592	Spermatogenic failure 19	0.0666932687163353
 6598	620490	Spermatogenic failure 85	0.06669323146343231
-6599	617960	Spermatogenic failure 25	0.06669314950704575
-6600	618341	Spermatogenic failure 35	0.06669314950704575
+6599	618341	Spermatogenic failure 35	0.06669314950704575
+6600	617960	Spermatogenic failure 25	0.06669314950704575
 6601	619143	Cardioacrofacial dysplasia 2	0.0666871964931488
 6602	300952	Linear skin defects with multiple congenital anomalies 3	0.06667488813400269
 6603	605407	Segawa syndrome, autosomal recessive	0.0666704773902893
@@ -6845,13 +6845,13 @@ rank	id	name	score
 6844	607017	Deafness, autosomal dominant 21	0.06454726308584213
 6845	615294	Ciliary dyskinesia, primary, 21	0.06454388052225113
 6846	618745	Spermatogenic failure 42	0.06454388052225113
-6847	620084	Spermatogenic failure 76	0.064543217420578
-6848	620222	Spermatogenic failure 80	0.064543217420578
+6847	620222	Spermatogenic failure 80	0.064543217420578
+6848	620084	Spermatogenic failure 76	0.064543217420578
 6849	619585	Spermatogenic failure 58	0.06454310566186905
 6850	618152	Spermatogenic failure 33	0.06454289704561234
 6851	619095	Spermatogenic failure 46	0.06454289704561234
-6852	617576	Spermatogenic failure 18	0.06454289704561234
-6853	618429	Spermatogenic failure 37	0.06454289704561234
+6852	618429	Spermatogenic failure 37	0.06454289704561234
+6853	617576	Spermatogenic failure 18	0.06454289704561234
 6854	617965	Spermatogenic failure 27	0.06454282999038696
 6855	300166	Microphthalmia, syndromic 2	0.06453931331634521
 6856	613102	Hypotrichosis and recurrent skin vesicles	0.06453406810760498
@@ -7039,8 +7039,8 @@ rank	id	name	score
 7038	619515	Spermatogenic failure 56	0.06252828240394592
 7039	618643	Spermatogenic failure 39	0.06252721697092056
 7040	301099	Spermatogenic failure, X-linked, 5	0.06252697110176086
-7041	619867	Spermatogenic failure 72	0.06252685189247131
-7042	618153	Spermatogenic failure 34	0.06252685189247131
+7041	618153	Spermatogenic failure 34	0.06252685189247131
+7042	619867	Spermatogenic failure 72	0.06252685189247131
 7043	606854	Polymicrogyria, bilateral frontoparietal	0.06251636892557144
 7044	618529	Robinow syndrome, autosomal recessive 2	0.06251326948404312
 7045	617665	Epileptic encephalopathy, early infantile, 56	0.06251232326030731
@@ -7460,8 +7460,8 @@ rank	id	name	score
 7459	616170	Macular dystrophy with central cone involvement	0.05719704553484917
 7460	148700	Keratosis palmoplantaris striata I	0.057194001972675323
 7461	615726	Pachyonychia congenita 3	0.057192299515008926
-7462	615598	Palmoplantar keratoderma, Nagashima type	0.05719071626663208
-7463	618522	Intellectual developmental disorder 59	0.05719071626663208
+7462	618522	Intellectual developmental disorder 59	0.05719071626663208
+7463	615598	Palmoplantar keratoderma, Nagashima type	0.05719071626663208
 7464	610202	Cataract 21, multiple types	0.05718829855322838
 7465	278850	46,XX sex reversal 2	0.05717901512980461
 7466	615760	Microcephaly, progressive, with seizures and cerebral and cerebellar atrophy	0.057168811559677124
@@ -7886,8 +7886,8 @@ rank	id	name	score
 7885	304110	Craniofrontonasal syndrome	0.031204337254166603
 7886	601942	Diabetes mellitus, insulin-dependent, 10	0.031186172738671303
 7887	601941	Diabetes mellitus, insulin-dependent, 6	0.031186172738671303
-7888	607373	Autism, susceptibility to, 8	0.031171545386314392
-7889	209850	Autism susceptibility 1	0.031171545386314392
+7888	209850	Autism susceptibility 1	0.031171545386314392
+7889	607373	Autism, susceptibility to, 8	0.031171545386314392
 7890	300861	Mental retardation, X-linked, syndromic, Chudley-Schwartz type	0.031158458441495895
 7891	614266	Barrett esophagus	0.031017115339636803
 7892	300354	Mental retardation, X-linked, syndromic, Cabezas type	0.030901465564966202
@@ -8005,8 +8005,8 @@ rank	id	name	score
 8004	301075	Myopathy, distal, 7, adult-onset, X-linked	0.01572241634130478
 8005	306960	Hhhh syndrome	0.015519117005169392
 8006	312920	Spastic paraplegia 2, X-linked	0.015422305092215538
-8007	612244	Inflammatory bowel disease 13	0.015276974998414516
-8008	612278	Inflammatory bowel disease 19	0.015276974998414516
+8007	612278	Inflammatory bowel disease 19	0.015276974998414516
+8008	612244	Inflammatory bowel disease 13	0.015276974998414516
 8009	314300	Torticollis, keloids, cryptorchidism, and renal dysplasia	0.015158752910792828
 8010	309510	Partington syndrome	0.014843592420220375
 8011	127800	Dysplasia epiphysealis hemimelica	0.01455729454755783
@@ -8100,9 +8100,9 @@ rank	id	name	score
 8099	300918	Palmoplantar keratoderma, mutilating, with periorificial keratotic plaques, X-linked	0.004371405579149723
 8100	300511	Premature ovarian failure 2A	0.004353565163910389
 8101	313500	Tooth agenesis, selective, X-linked, 1	0.004292633384466171
-8102	300324	Mental retardation, X-linked 53	0.004083541687577963
-8103	300046	Mental retardation, X-linked 23	0.004083541687577963
-8104	300433	Mental retardation, X-linked 81	0.004083541687577963
+8102	300046	Mental retardation, X-linked 23	0.004083541687577963
+8103	300433	Mental retardation, X-linked 81	0.004083541687577963
+8104	300324	Mental retardation, X-linked 53	0.004083541687577963
 8105	300436	Mental retardation, X-linked 46	0.003929325379431248
 8106	300843	Bornholm eye disease	0.0037896246649324894
 8107	300210	Mental retardation, X-linked 58	0.0037892870604991913
@@ -8113,16 +8113,16 @@ rank	id	name	score
 8112	309200	Major affective disorder 2	0.003420152235776186
 8113	613825	Complement component 9 deficiency	0.0032565034925937653
 8114	137550	Melanocytic nevus syndrome, congenital	0.003225910710170865
-8115	158280	Motion sickness	0.0031580275390297174
-8116	300082	Cognitive function 1, social	0.0031580275390297174
+8115	300082	Cognitive function 1, social	0.0031580275390297174
+8116	158280	Motion sickness	0.0031580275390297174
 8117	612310	Premature ovarian failure 6	0.0030524269677698612
 8118	612965	46XY sex reversal 3	0.0029725152999162674
 8119	612964	Premature ovarian failure 7	0.002969243796542287
 8120	606840	Faciomandibular myoclonus, nocturnal	0.0027943856548517942
 8121	308100	Ichthyosis, X-linked	0.0027692446019500494
-8122	277990	Intellectual disability, Wolff type	0.0026607271283864975
-8123	300218	Syndromic X-linked intellectual disability 7	0.0026607271283864975
-8124	300262	X-LINKED intellectual disability, Abidi type	0.0026607271283864975
+8122	300218	Syndromic X-linked intellectual disability 7	0.0026607271283864975
+8123	300262	X-LINKED intellectual disability, Abidi type	0.0026607271283864975
+8124	277990	Intellectual disability, Wolff type	0.0026607271283864975
 8125	300709	X-LINKED intellectual disability, Shrimpton type	0.0026607271283864975
 8126	619478	Facioscapulohumeral muscular dystrophy 4, digenic	0.0025375739205628633
 8127	179400	Radius, aplasia of, with cleft lip/palate	0.002500333124771714
@@ -8141,8 +8141,8 @@ rank	id	name	score
 8140	300245	Ptosis, hereditary congenital 2	0.0015412102220579982
 8141	300834	Macular degeneration, X-linked atrophic	0.0015172215644270182
 8142	303800	Colorblindness, deutan	0.0014891113387420774
-8143	300633	Hypospadias 1, X-linked	0.0014868122525513172
-8144	300758	Hypospadias 2, X-linked	0.0014868122525513172
+8143	300758	Hypospadias 2, X-linked	0.0014868122525513172
+8144	300633	Hypospadias 1, X-linked	0.0014868122525513172
 8145	300779	Corneal dystrophy, endothelial, X-linked	0.0014624244067817926
 8146	300066	Deafness, X-linked 4	0.001460308558307588
 8147	300814	Nystagmus 6, congenital, X-linked	0.0014581074938178062
@@ -8176,20 +8176,20 @@ rank	id	name	score
 8175	606579	Vitiligo-Associated multiple autoimmune disease susceptibility 1	0.00032163664582185447
 8176	610504	Preterm premature rupture of the membranes	0.00030894085648469627
 8177	600625	Orofacial cleft 11	0.0003075449203606695
-8178	610149	Macular degeneration, age-related, 7	0.00030578571022488177
-8179	611953	Macular degeneration, age-related, 11	0.00030578571022488177
+8178	611953	Macular degeneration, age-related, 11	0.00030578571022488177
+8179	610149	Macular degeneration, age-related, 7	0.00030578571022488177
 8180	607107	Nasopharyngeal carcinoma	0.0002930558111984283
 8181	612551	Focal segmental glomerulosclerosis 4, susceptibility to	0.00029124965658411384
 8182	609404	Preeclampsia/eclampsia 4	0.0002769527491182089
 8183	425500	HAIRY EARS, Y-LINKED	0.00010821042815223336
 8184	161550	Nasopharyngeal carcinoma	0.00010821042815223336
 8185	139630	Hairy nose tip	6.70237495796755e-05
-8186	609259	Myopia 10	5.552351285587065e-05
+8186	609258	Myopia 9	5.552351285587065e-05
 8187	609257	Myopia 8	5.552351285587065e-05
-8188	609258	Myopia 9	5.552351285587065e-05
+8188	609259	Myopia 10	5.552351285587065e-05
 8189	185100	Strabismus, susceptibility to	5.041977419750765e-05
-8190	613100	Glaucoma 1, open angle, O	5.029951353208162e-05
-8191	609887	Glaucoma 1, open angle, G	5.029951353208162e-05
+8190	609887	Glaucoma 1, open angle, G	5.029951353208162e-05
+8191	613100	Glaucoma 1, open angle, O	5.029951353208162e-05
 8192	130700	Emphysema, hereditary pulmonary	4.611240728991106e-05
 8193	606963	Pulmonary disease, chronic obstructive	4.175727372057736e-05
 8194	600457	Hypertrichosis, anterior cervical	3.7597907066810876e-05

@@ -102,10 +102,15 @@ pip install -e .
 
 ```python
 from iderare_pheno.converter import term2omim, term2orpha, term2hpo, batchconvert
-from iderare_pheno.simrec import hpo2omim_similarity, omim_recommendation, hpo2name
+from iderare_pheno.simrec import hpo2omim_similarity, omim_recommendation, hpo2name, omim2name
 from iderare_pheno.utils import linkage_dendrogram, list2tsv, generate_yml
 ```
-As the complete readthedocs.io is still ongoing, please kindly refer to this [Interactive Playbook Example](https://github.com/ivanwilliammd/iderare-pheno/blob/main/Playbook.ipynb)
+As the complete readthedocs.io is being finalized, please kindly refer to this [Interactive Playbook Example](https://github.com/ivanwilliammd/iderare-pheno/blob/main/Playbook.ipynb)
+
+Note : for Streamlit implementation, use ```iderare_pheno.streamlit_utils``` instead of ```iderare_pheno.utils```, this was done to prevenn file automatically saving and showing dendrogram in Streamlit.
+```python
+from iderare_pheno.streamlit_utils import linkage_dendrogram, list2tsv, generate_yml
+```
 
 
 ## Team
