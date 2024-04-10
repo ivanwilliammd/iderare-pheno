@@ -28,8 +28,12 @@ def hpos2set(hpo_set):
 # Get HPO Name from HPO Code
 def hpo2name(hpo_set):
     hpo_name = [Ontology.hpo(int(d.strip("HP:"))).name for d in hpo_set]
-
     return hpo_name
+
+# Get OMIM Name from HPO Code
+def omim2name(diagnosis_sets):
+    omim_name = [Omim.get(int(d.strip("OMIM:"))).name for d in diagnosis_sets]
+    return omim_name
 
 
 # Threshold similarity
