@@ -1,4 +1,4 @@
-# [IDeRare-Pheno](https://iderare-pheno.readthedocs.io/)
+# [IDeRare-Pheno](https://pypi.org/project/iderare_pheno/)
 
 <p align="center">
     <a href="https://github.com/ivanwilliammd/iderare-pheno/actions">
@@ -7,9 +7,9 @@
     <a href="https://pypi.org/project/iderare_pheno/">
         <img alt="PyPI" src="https://img.shields.io/pypi/v/iderare_pheno">
     </a>
-    <a href="https://iderare-pheno.readthedocs.io/en/latest/?badge=latest">
+<!--     <a href="https://iderare-pheno.readthedocs.io/en/latest/?badge=latest">
         <img src="https://readthedocs.org/projects/iderare-pheno/badge/?version=latest" alt="Documentation Status" />
-    </a>
+    </a> -->
     <a href="https://github.com/ivanwilliammd/iderare-pheno/blob/main/LICENSE">
         <img alt="License" src="https://img.shields.io/github/license/ivanwilliammd/iderare-pheno.svg?color=blue&cachedrop">
     </a>
@@ -38,13 +38,12 @@ Ivan William Harsono<sup>a</sup>, Yulia Ariani<sup>b</sup>, Beben Benyamin<sup>c
 **Note:** Currently IDeRare paper is being considered journal submission. The citation will be updated once the paper is published.
 
 ## Quick links
-
-- [Documentation](https://iderare-pheno.readthedocs.io/)
+- [IDeRare full pipeline - Phenotype and Genotype](https://github.com/ivanwilliammd/IDeRare)
 - [PyPI Package](https://pypi.org/project/iderare-pheno/)
 - [License](https://github.com/ivanwilliammd/iderare-pheno/blob/main/LICENSE)
 - [Interactive Playbook Example](https://github.com/ivanwilliammd/iderare-pheno/blob/main/Playbook.ipynb)
 - Interactive Webapps Implementation of at [Streamlit](https://bioinformatics-ivanwilliamharsono.streamlitapp.com/IDeRare_Pheno)
-
+<!-- - [Documentation](https://iderare-pheno.readthedocs.io/) -->
 
 ## What does it do?
 
