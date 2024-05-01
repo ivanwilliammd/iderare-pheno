@@ -1,6 +1,7 @@
+from typing import List, Union
+
 from fastapi import FastAPI, HTTPException, Response
 from pydantic import BaseModel
-from typing import List, Union
 
 app = FastAPI()
 
