@@ -6,8 +6,11 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## Unreleased
-- Added ```fhir_parser.py``` function covering code extraction from FHIR Observation, Condition, and Bundle resources at ```/fhir/parse/resource``` (singular resource) and ```/fhir/parse/bundle``` (bundle resource).
-- Added FastAPI endpoint function triggering ```batchconvert``` function at **/iderare/batchconvert** endpoint.
+
+### Added
+- Created ```fhir_parser.py``` 
+- FHIR Parser function covering code extraction from FHIR Observation, Condition, and Bundle resources at ```/fhir/parse/resource``` (singular resource) and ```/fhir/parse/bundle``` (bundle resource).
+- Additional endpoint function triggering ```batchconvert``` function at **/iderare/batchconvert** endpoint.
 
 
 ## [v0.5.0](https://github.com/ivanwilliammd/iderare-pheno/releases/tag/v0.5.0) - 2024-04-10
