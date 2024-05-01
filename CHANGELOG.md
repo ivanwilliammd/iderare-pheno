@@ -9,7 +9,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 - FHIR Parser function covering code extraction from FHIR Observation, Condition, and Bundle resources at ```/fhir/parse/resource``` (singular resource) and ```/fhir/parse/bundle``` (bundle resource).
 - Additional endpoint function triggering ```batchconvert``` function at **/iderare/batchconvert** endpoint.
-- Postman Documentation
+- Postman Documentation updated at [this workspaces](https://www.postman.com/ivanwilliamharsono/workspace/iderare-pheno/overview)
+- Public testing at [https://iderare.ivanwilliamharsono.com](https://iderare.ivanwilliamharsono.com)
 
 
 ## [v0.5.0](https://github.com/ivanwilliammd/iderare-pheno/releases/tag/v0.5.0) - 2024-04-10
