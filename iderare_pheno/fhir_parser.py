@@ -1,7 +1,9 @@
 from typing import List, Union
 
-from fastapi import FastAPI, HTTPException, Response
+from fastapi import FastAPI, HTTPException, Request, Response
 from pydantic import BaseModel
+
+from iderare_pheno.converter import batchconvert
 
 app = FastAPI()
 
@@ -90,3 +92,9 @@ async def fhir_batch_parse(bundle: Bundle) -> Response:
 @app.post("/fhir/parse/resource")
 async def fhir_parse(resource: Union[Observation, Condition]) -> Response:
     return {"result" : resource_object(resource, resource.resourceType)}
+
+
+@app.post("/iderare/batchconvert")
+async def iderare_batch_convert(data: List[str]) -> Response:
+    hpo_sets, diagnosis_sets = batchconvert(data)
+    return {"hpo_sets" : hpo_sets, "diagnosis_sets" : diagnosis_sets}
