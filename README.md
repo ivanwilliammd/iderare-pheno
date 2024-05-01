@@ -106,10 +106,55 @@ from iderare_pheno.utils import linkage_dendrogram, list2tsv, generate_yml
 ```
 As the complete readthedocs.io is being finalized, please kindly refer to this [Interactive Playbook Example](https://github.com/ivanwilliammd/iderare-pheno/blob/main/Playbook.ipynb)
 
-Note : for Streamlit implementation, use ```iderare_pheno.streamlit_utils``` instead of ```iderare_pheno.utils```, this was done to prevenn file automatically saving and showing dendrogram in Streamlit.
+Note : for Streamlit implementation, use ```iderare_pheno.streamlit_utils``` instead of ```iderare_pheno.utils```, this was done to prevent file to automatically saving and showing dendrogram in Streamlit.
 ```python
 from iderare_pheno.streamlit_utils import linkage_dendrogram, list2tsv, generate_yml
 ```
+
+For Python FastAPI implementation and FHIR code extraction / parsing and deploying wsgi app, ensure you have installed the dependencies below:
+```bash
+pip install fastapi uvicorn a2wsgi
+```
+
+Then prepare your passenger wsgi app and main FastAPI app as below:
+
+#### passenger_wsgi.py
+```python
+import os
+import sys
+from a2wsgi import ASGIMiddleware
+
+# Adjust the path to your FastAPI application directory if needed
+app_dir = os.path.join(os.path.dirname(__file__), 'app')
+sys.path.insert(0, app_dir)
+
+# Import your FastAPI application
+from app.main import app  # Assuming your FastAPI app instance is named 'app'
+
+# Application callable for Passenger WSGI
+def application(environ, start_response):
+    return ASGIMiddleware(app)(environ, start_response)
+```
+
+#### app/main.py
+```python
+from fastapi.responses import RedirectResponse
+from iderare_pheno.fhir_parser import *
+
+@app.get("/")
+async def welcome():
+    return RedirectResponse(status_code=302, url="/docs")
+
+@app.get("/health")
+async def health() -> Response :
+    return {"status_code" : 200, "detail" : "The services is running, try to explore the API from Postman Collection"}
+
+if __name__ == "__main__":
+    import uvicorn
+    uvicorn.run(app, host="0.0.0.0", port=8000)
+```
+
+Now you could access your http://localhost:8000 and redirected to Swagger to see the documentation of the available FastAPI endpoint. Demo example could be accessed via Postman Collection at [here](https://www.postman.com/ivanwilliamharsono/workspace/iderare-pheno/overview)
 
 
 ## Team
