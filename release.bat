@@ -1,8 +1,6 @@
 @echo off
 setlocal enabledelayedexpansion
 
-call conda activate iderare-pheno
-
 set TAG=
 for /f "tokens=*" %%a in ('python -c "from iderare_pheno.version import VERSION; print('v' + VERSION)"') do set "TAG=%%a"
 

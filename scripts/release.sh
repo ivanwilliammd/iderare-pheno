@@ -1,19 +1,19 @@
-#!/bin/bash
+@echo off
+setlocal enabledelayedexpansion
 
-set -e
+set TAG=
+for /f %%i in ('python -c "from iderare_pheno.version import VERSION; print(VERSION)"') do set TAG=v%%i
 
-TAG=$(python -c 'from iderare_pheno.version import VERSION; print("v" + VERSION)')
+set /p prompt=Creating new release for %TAG%. Do you want to continue? [Y/n] 
 
-read -p "Creating new release for $TAG. Do you want to continue? [Y/n] " prompt
-
-if [[ $prompt == "y" || $prompt == "Y" || $prompt == "yes" || $prompt == "Yes" ]]; then
+if /i "%prompt%"=="Y" (
     python scripts/prepare_changelog.py
     git add -A
-    git commit -m "Bump version to $TAG for release" || true && git push
-    echo "Creating new git tag $TAG"
-    git tag "$TAG" -m "$TAG"
+    git commit -m "Bump version to %TAG% for release" || (exit /b 0) & git push
+    echo Creating new git tag %TAG%
+    git tag "%TAG%" -m "%TAG%"
     git push --tags
-else
-    echo "Cancelled"
-    exit 1
-fi
+) else (
+    echo Cancelled
+    exit /b 1
+)
