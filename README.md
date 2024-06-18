@@ -34,8 +34,13 @@ Ivan William Harsono<sup>a</sup>, Yulia Ariani<sup>b</sup>, Beben Benyamin<sup>c
 <sup>g</sup>Bioinformatics Core Facilities - IMERI, Faculty of Medicine, Universitas Indonesia, Jalan Salemba Raya number 6, Jakarta, 10430, Indonesia .<br>
 <sup>h</sup>Department of Child Health, Dr. Cipto Mangunkusumo Hospital, Faculty of Medicine, University of Indonesia, Jakarta, Indonesia. <br>
 
+## How to Cite
+Please kindly cite the main paper titled *"IDeRare: a lightweight and extensible open-source phenotype and exome analysis pipeline for germline rare disease diagnosis"* available at [https://doi.org/10.1093/jamiaopen/ooae052](https://doi.org/10.1093/jamiaopen/ooae052)
 
-**Note:** Currently IDeRare paper is being considered journal submission. The citation will be updated once the paper is published.
+**Example :**
+```
+Ivan William Harsono, Yulia Ariani, Beben Benyamin, Fadilah Fadilah, Dwi Ari Pujianto, Cut Nurul Hafifah, IDeRare: a lightweight and extensible open-source phenotype and exome analysis pipeline for germline rare disease diagnosis, JAMIA Open, Volume 7, Issue 2, July 2024, ooae052, https://doi.org/10.1093/jamiaopen/ooae052
+```
 
 ## Quick links
 - [IDeRare full pipeline - Phenotype and Genotype](https://github.com/ivanwilliammd/IDeRare)
