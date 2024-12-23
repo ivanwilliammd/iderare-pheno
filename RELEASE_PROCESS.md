@@ -3,6 +3,7 @@
 ## Steps
 
 1. Update the version in `iderare_pheno/version.py`.
+2. Run ```pip install .``` to update the version in the conda / local python environment.
 
 3. Run the release script:
 
