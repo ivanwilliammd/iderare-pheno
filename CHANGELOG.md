@@ -7,7 +7,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## Unreleased
 
-## [v0.4.0](https://github.com/ivanwilliammd/iderare-pheno/releases/tag/v0.4.0) - 2024-12-23
+## [v0.7.1](https://github.com/ivanwilliammd/iderare-pheno/releases/tag/v0.7.1) - 2024-12-23
 - Adjust FastAPI description title and description
 
 ## [v0.6.2](https://github.com/ivanwilliammd/iderare-pheno/releases/tag/v0.6.2) - 2024-05-01
