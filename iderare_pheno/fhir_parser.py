@@ -5,7 +5,10 @@ from pydantic import BaseModel
 
 from iderare_pheno.converter import batchconvert
 
-app = FastAPI()
+app = FastAPI(
+    title="IDeRare Pheno FHIR Parser",
+    description="A simple FHIR parser embedded in IDeRare Pheno project using FastAPI.",
+)
 
 
 class Coding(BaseModel):
