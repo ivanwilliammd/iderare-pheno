@@ -1,7 +1,7 @@
 Installation
 ============
 
-**iderare-pheno** supports Python >= 3.8.
+**iderare-pheno** supports Python >= 3.10.
 
 ## Installing with `pip`
 

@@ -7,6 +7,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## Unreleased
 
+## [v0.7.3](https://github.com/ivanwilliammd/iderare-pheno/releases/tag/v0.7.3) - 2025-01-17
+- Bump update requirement and workflows for Python >=3.10 for sphinx bump and better sustainability
+
 ## [v0.7.2](https://github.com/ivanwilliammd/iderare-pheno/releases/tag/v0.7.2) - 2024-12-23
 - Added step-by-step in RELEASE_PROCESS.md
 

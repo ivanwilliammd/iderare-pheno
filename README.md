@@ -67,7 +67,7 @@ This script is recommended if you would like to do conversion, linkage analysis,
 
 <!-- start py version -->
 
-**iderare-pheno** requires Python 3.8 or later.
+**iderare-pheno** requires Python 3.10 or later.
 
 <!-- end py version -->
 

@@ -11,6 +11,12 @@
     ./scripts/release.sh
     ```
 
+    or if you're on Windows:
+
+    ```bash
+    release.bat
+    ```
+
     This will commit the changes to the CHANGELOG and `version.py` files and then create a new tag in git
     which will trigger a workflow on GitHub Actions that handles the rest.
 
