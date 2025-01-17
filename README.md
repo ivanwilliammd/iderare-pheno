@@ -15,6 +15,10 @@
     </a>
     <a href="https://bioinformatics-ivanwilliamharsono.streamlit.app/IDeRare_Pheno">
         <img alt="Streamlit" src="https://static.streamlit.io/badges/streamlit_badge_black_white.svg">
+    </a>
+    <a href="https://iderare.ivanwilliamharsono.com">
+        <img alt="FastAPI" src="https://img.shields.io/badge/FastAPI-005571.svg?logo=fastapi&logoColor=white")
+    </a>
     <br/>
 </p>
 
