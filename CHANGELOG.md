@@ -7,6 +7,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## Unreleased
 
+## [v1.0.0](https://github.com/ivanwilliammd/iderare-pheno/releases/tag/v1.0.0) - 2025-02-16
+- Update file handle to close the file after loading to pandas, and call garbage collector to free up memory.
+
 ## [v0.7.3](https://github.com/ivanwilliammd/iderare-pheno/releases/tag/v0.7.3) - 2025-01-17
 - Bump update requirement and workflows for Python >=3.10 for sphinx bump and better sustainability
 
