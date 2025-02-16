@@ -20,30 +20,36 @@ yaml_file = "iderare.yaml"
 # Clinical data dummy in txt format separated with new line
 clinical_data = "clinical_data.txt"
 
+
 # Read the clinical data and parse the data
-with open(icd10omim, "r") as file:
-    icd10omim_df = pd.read_csv(file, sep="\t")
-with open(loinc2hpo, "r") as file:
-    loinc2hpo_df = pd.read_csv(file, sep="\t")
-with open(orpha2omim, "r") as file:
-    orpha2omim_df = pd.read_csv(file, sep="\t")
-with open(omim2hpo, "r") as file:
-    omim2hpo_df = pd.read_csv(file, sep="\t")
-with open(snomed2hpo, "r") as file:
-    snomed2hpo_df = pd.read_csv(file, sep="\t")
-with open(snomed2orpha, "r") as file:
-    snomed2orpha_df = pd.read_csv(file, sep="\t")
+def spawn_data():
+    with open(icd10omim, "r") as file:
+        icd10omim_df = pd.read_csv(file, sep="\t")
+    with open(loinc2hpo, "r") as file:
+        loinc2hpo_df = pd.read_csv(file, sep="\t")
+    with open(orpha2omim, "r") as file:
+        orpha2omim_df = pd.read_csv(file, sep="\t")
+    with open(omim2hpo, "r") as file:
+        omim2hpo_df = pd.read_csv(file, sep="\t")
+    with open(snomed2hpo, "r") as file:
+        snomed2hpo_df = pd.read_csv(file, sep="\t")
+    with open(snomed2orpha, "r") as file:
+        snomed2orpha_df = pd.read_csv(file, sep="\t")
+
+    return icd10omim_df, loinc2hpo_df, orpha2omim_df, omim2hpo_df, snomed2hpo_df, snomed2orpha_df
 
 
 # Ensure DataFrames are deleted and memory is freed up after all operations
-def cleanup():
-    global icd10omim_df, loinc2hpo_df, orpha2omim_df, omim2hpo_df, snomed2hpo_df, snomed2orpha_df
+def cleanup(icd10omim_df, loinc2hpo_df, orpha2omim_df, omim2hpo_df, snomed2hpo_df, snomed2orpha_df):
     del icd10omim_df, loinc2hpo_df, orpha2omim_df, omim2hpo_df, snomed2hpo_df, snomed2orpha_df
     gc.collect()
 
 
 # Convert SNOMED to ORPHA First
 def term2orpha(clinical_data):
+    icd10omim_df, loinc2hpo_df, orpha2omim_df, omim2hpo_df, snomed2hpo_df, snomed2orpha_df = (
+        spawn_data()
+    )
     print("Trying to parse ORPHA from SNOMEDCT", clinical_data)
 
     if "SNOMEDCT:" in clinical_data:
@@ -59,7 +65,14 @@ def term2orpha(clinical_data):
                 (", ").join(snomed_sugg.values),
                 "?\n",
             )
-            cleanup()
+            cleanup(
+                icd10omim_df,
+                loinc2hpo_df,
+                orpha2omim_df,
+                omim2hpo_df,
+                snomed2hpo_df,
+                snomed2orpha_df,
+            )
             return []
         else:
             snomed_orpha = snomed2orpha_df[snomed2orpha_df["code"] == clinical_data][
@@ -74,7 +87,14 @@ def term2orpha(clinical_data):
                 (", ").join(snomed_orpha),
                 "\n",
             )
-            cleanup()
+            cleanup(
+                icd10omim_df,
+                loinc2hpo_df,
+                orpha2omim_df,
+                omim2hpo_df,
+                snomed2hpo_df,
+                snomed2orpha_df,
+            )
             return snomed_orpha
 
     else:
@@ -82,12 +102,17 @@ def term2orpha(clinical_data):
             "The terminology is not recognized, please check if you have used correct terminology."
         )
         print("Allowable format : SNOMEDCT disorder semantic only SNOMEDCT:1212005", "\n")
-        cleanup()
+        cleanup(
+            icd10omim_df, loinc2hpo_df, orpha2omim_df, omim2hpo_df, snomed2hpo_df, snomed2orpha_df
+        )
         return []
 
 
 # HPO Parser for Clinical Finding Related Terminology such as SNOMED, LOINC
 def term2hpo(clinical_data):
+    icd10omim_df, loinc2hpo_df, orpha2omim_df, omim2hpo_df, snomed2hpo_df, snomed2orpha_df = (
+        spawn_data()
+    )
     print("Trying to parse HPO from terminology", clinical_data)
 
     # LOINC case
@@ -105,7 +130,14 @@ def term2hpo(clinical_data):
                     loinc2hpo_df["loinc"].str.contains(loinc.strip("LOINC:"))
                 ]["loinc"].drop_duplicates()
                 print("Did you mean any of this code:", (", ").join(loinc_sugg.values), "?\n")
-                cleanup()
+                cleanup(
+                    icd10omim_df,
+                    loinc2hpo_df,
+                    orpha2omim_df,
+                    omim2hpo_df,
+                    snomed2hpo_df,
+                    snomed2orpha_df,
+                )
                 return []
 
             loinc_hpo = loinc2hpo_df[loinc2hpo_df["loinc"] == loinc]
@@ -125,14 +157,28 @@ def term2hpo(clinical_data):
                     (" or ").join(interpretation_sugg.values),
                     "\n",
                 )
-                cleanup()
+                cleanup(
+                    icd10omim_df,
+                    loinc2hpo_df,
+                    orpha2omim_df,
+                    omim2hpo_df,
+                    snomed2hpo_df,
+                    snomed2orpha_df,
+                )
                 return []
 
             loinc_hpo = loinc_hpo[loinc_hpo["interpretation"] == interpretation][
                 "hpoTermId"
             ].to_list()
             print("Parsing of", clinical_data, "successful with result of :", loinc_hpo, "\n")
-            cleanup()
+            cleanup(
+                icd10omim_df,
+                loinc2hpo_df,
+                orpha2omim_df,
+                omim2hpo_df,
+                snomed2hpo_df,
+                snomed2orpha_df,
+            )
             return list(loinc_hpo)
         else:
             print("LOINC data is missing either code / interpretation.")
@@ -140,7 +186,14 @@ def term2hpo(clinical_data):
                 "Example : LOINC:721-1|H for Qn lab examination OR LOINC:721-1|NEG for Nominal / Ordinal Lab Examination",
                 "\n",
             )
-            cleanup()
+            cleanup(
+                icd10omim_df,
+                loinc2hpo_df,
+                orpha2omim_df,
+                omim2hpo_df,
+                snomed2hpo_df,
+                snomed2orpha_df,
+            )
             return []
 
     # SNOMEDCT case
@@ -157,7 +210,14 @@ def term2hpo(clinical_data):
                 (", ").join(snomed_sugg.values),
                 "?\n",
             )
-            cleanup()
+            cleanup(
+                icd10omim_df,
+                loinc2hpo_df,
+                orpha2omim_df,
+                omim2hpo_df,
+                snomed2hpo_df,
+                snomed2orpha_df,
+            )
             return []
         else:
             snomed_hpo = snomed2hpo_df[snomed2hpo_df["SNOMED_CT_ID"] == clinical_data][
@@ -172,7 +232,14 @@ def term2hpo(clinical_data):
                 (", ").join(snomed_hpo),
                 "\n",
             )
-            cleanup()
+            cleanup(
+                icd10omim_df,
+                loinc2hpo_df,
+                orpha2omim_df,
+                omim2hpo_df,
+                snomed2hpo_df,
+                snomed2orpha_df,
+            )
             return list(snomed_hpo)
 
     # Not recognized case
@@ -184,12 +251,17 @@ def term2hpo(clinical_data):
             "Example : LOINC:2862-1|L for Qn lab examination OR LOINC:725-2|NEG for categoric lab examination of SNOMEDCT:48610005 for Clinical Finding",
             "\n",
         )
-        cleanup()
+        cleanup(
+            icd10omim_df, loinc2hpo_df, orpha2omim_df, omim2hpo_df, snomed2hpo_df, snomed2orpha_df
+        )
         return []
 
 
 # OMIM Parser used for diagnosis related terminology ICD-10, ORPHA, SNOMEDCT to be translated to OMIM
 def term2omim(clinical_data):
+    icd10omim_df, loinc2hpo_df, orpha2omim_df, omim2hpo_df, snomed2hpo_df, snomed2orpha_df = (
+        spawn_data()
+    )
     print("Trying to parse OMIM from terminology", clinical_data)
 
     # ICD-10 case
@@ -200,7 +272,14 @@ def term2omim(clinical_data):
                 icd10omim_df["ICD10"].str.contains(clinical_data.strip("ICD-10:"))
             ]["ICD10"].drop_duplicates()
             print("Did you mean any of this code:", (", ").join(icd_sugg.values), "?\n")
-            cleanup()
+            cleanup(
+                icd10omim_df,
+                loinc2hpo_df,
+                orpha2omim_df,
+                omim2hpo_df,
+                snomed2hpo_df,
+                snomed2orpha_df,
+            )
             return []
         else:
             icd_omim = icd10omim_df[icd10omim_df["ICD10"] == clinical_data]["OMIM"].to_list()
@@ -213,7 +292,14 @@ def term2omim(clinical_data):
                 (", ").join(icd_omim),
                 "\n",
             )
-            cleanup()
+            cleanup(
+                icd10omim_df,
+                loinc2hpo_df,
+                orpha2omim_df,
+                omim2hpo_df,
+                snomed2hpo_df,
+                snomed2orpha_df,
+            )
             return icd_omim
 
     # ORPHA case
@@ -224,7 +310,14 @@ def term2omim(clinical_data):
                 orpha2omim_df["ORPHA"].str.contains(clinical_data.strip("ORPHA:"))
             ]["ORPHA"].drop_duplicates()
             print("Did you mean any of this code:", (", ").join(orpha_sugg.values), "?\n")
-            cleanup()
+            cleanup(
+                icd10omim_df,
+                loinc2hpo_df,
+                orpha2omim_df,
+                omim2hpo_df,
+                snomed2hpo_df,
+                snomed2orpha_df,
+            )
             return []
         else:
             orpha_hpo = orpha2omim_df[orpha2omim_df["ORPHA"] == clinical_data]["OMIM"].to_list()
@@ -237,13 +330,22 @@ def term2omim(clinical_data):
                 (", ").join(orpha_hpo),
                 "\n",
             )
-            cleanup()
+            cleanup(
+                icd10omim_df,
+                loinc2hpo_df,
+                orpha2omim_df,
+                omim2hpo_df,
+                snomed2hpo_df,
+                snomed2orpha_df,
+            )
             return orpha_hpo
 
     else:
         print("The terminology is not recognized, please check the input format.")
         print("Allowable format is : ICD-10:xxxx OR ORPHA:xxxxx for clinical disorder", "\n")
-        cleanup()
+        cleanup(
+            icd10omim_df, loinc2hpo_df, orpha2omim_df, omim2hpo_df, snomed2hpo_df, snomed2orpha_df
+        )
         return []
 
 
@@ -307,5 +409,4 @@ def batchconvert(clinical_data_list):
             )
             continue
 
-    cleanup()
     return hpo_sets, diagnosis_sets

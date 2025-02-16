@@ -7,6 +7,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## Unreleased
 
+## [v1.0.1](https://github.com/ivanwilliammd/iderare-pheno/releases/tag/v1.0.1) - 2025-02-16
+- Prevent early deletion (gc.collect()) after loading the file to pandas
+
 ## [v1.0.0](https://github.com/ivanwilliammd/iderare-pheno/releases/tag/v1.0.0) - 2025-02-16
 - Update file handle to close the file after loading to pandas, and call garbage collector to free up memory.
 
