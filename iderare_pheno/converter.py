@@ -41,6 +41,7 @@ def cleanup():
     del icd10omim_df, loinc2hpo_df, orpha2omim_df, omim2hpo_df, snomed2hpo_df, snomed2orpha_df
     gc.collect()
 
+
 # Convert SNOMED to ORPHA First
 def term2orpha(clinical_data):
     print("Trying to parse ORPHA from SNOMEDCT", clinical_data)
@@ -57,7 +58,7 @@ def term2orpha(clinical_data):
                 "Sugggestion : It is possible that you mean any of this code:",
                 (", ").join(snomed_sugg.values),
                 "?\n",
-            ) 
+            )
             cleanup()
             return []
         else:
@@ -83,8 +84,6 @@ def term2orpha(clinical_data):
         print("Allowable format : SNOMEDCT disorder semantic only SNOMEDCT:1212005", "\n")
         cleanup()
         return []
-    
-
 
 
 # HPO Parser for Clinical Finding Related Terminology such as SNOMED, LOINC
@@ -307,6 +306,6 @@ def batchconvert(clinical_data_list):
                 "\n",
             )
             continue
-    
+
     cleanup()
     return hpo_sets, diagnosis_sets
