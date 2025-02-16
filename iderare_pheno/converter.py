@@ -1,5 +1,6 @@
-import os
 import gc
+import os
+
 import pandas as pd
 
 # Declare the folder path for phenotype data source
@@ -20,18 +21,19 @@ yaml_file = "iderare.yaml"
 clinical_data = "clinical_data.txt"
 
 # Read the clinical data and parse the data
-with open(icd10omim, 'r') as file:
+with open(icd10omim, "r") as file:
     icd10omim_df = pd.read_csv(file, sep="\t")
-with open(loinc2hpo, 'r') as file:
+with open(loinc2hpo, "r") as file:
     loinc2hpo_df = pd.read_csv(file, sep="\t")
-with open(orpha2omim, 'r') as file:
+with open(orpha2omim, "r") as file:
     orpha2omim_df = pd.read_csv(file, sep="\t")
-with open(omim2hpo, 'r') as file:
+with open(omim2hpo, "r") as file:
     omim2hpo_df = pd.read_csv(file, sep="\t")
-with open(snomed2hpo, 'r') as file:
+with open(snomed2hpo, "r") as file:
     snomed2hpo_df = pd.read_csv(file, sep="\t")
-with open(snomed2orpha, 'r') as file:
+with open(snomed2orpha, "r") as file:
     snomed2orpha_df = pd.read_csv(file, sep="\t")
+
 
 # Convert SNOMED to ORPHA First
 def term2orpha(clinical_data):
@@ -284,6 +286,7 @@ def batchconvert(clinical_data_list):
             continue
 
     return hpo_sets, diagnosis_sets
+
 
 # Ensure DataFrames are deleted and memory is freed up after all operations
 del icd10omim_df, loinc2hpo_df, orpha2omim_df, omim2hpo_df, snomed2hpo_df, snomed2orpha_df
