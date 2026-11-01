@@ -23,17 +23,17 @@ clinical_data = "clinical_data.txt"
 
 # Read the clinical data and parse the data
 def spawn_data():
-    with open(icd10omim, "r") as file:
+    with open(icd10omim) as file:
         icd10omim_df = pd.read_csv(file, sep="\t")
-    with open(loinc2hpo, "r") as file:
+    with open(loinc2hpo) as file:
         loinc2hpo_df = pd.read_csv(file, sep="\t")
-    with open(orpha2omim, "r") as file:
+    with open(orpha2omim) as file:
         orpha2omim_df = pd.read_csv(file, sep="\t")
-    with open(omim2hpo, "r") as file:
+    with open(omim2hpo) as file:
         omim2hpo_df = pd.read_csv(file, sep="\t")
-    with open(snomed2hpo, "r") as file:
+    with open(snomed2hpo) as file:
         snomed2hpo_df = pd.read_csv(file, sep="\t")
-    with open(snomed2orpha, "r") as file:
+    with open(snomed2orpha) as file:
         snomed2orpha_df = pd.read_csv(file, sep="\t")
 
     return icd10omim_df, loinc2hpo_df, orpha2omim_df, omim2hpo_df, snomed2hpo_df, snomed2orpha_df

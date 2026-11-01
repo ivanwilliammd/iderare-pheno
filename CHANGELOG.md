@@ -6,6 +6,14 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## Unreleased
+### Fixed
+- Lint CI accepts ruff 0.16 again (43 findings), and `target-version` now matches the
+  declared `requires-python >=3.10`.
+- `omim2object`/`hpo2name`/`omim2name` stripped *characters* instead of the `OMIM:`/`HP:`
+  prefix (`strip()` → `removeprefix()`), which could mangle codes such as `MIM:1234`.
+- Timestamps use `datetime.now(timezone.utc)`; `datetime.UTC` only exists from Python 3.11,
+  so the docs build failed on the supported floor 3.10.
+- FHIR endpoints return `dict[...]` in their annotations (`mypy` clean).
 
 ## [v1.0.1](https://github.com/ivanwilliammd/iderare-pheno/releases/tag/v1.0.1) - 2025-02-16
 - Prevent early deletion (gc.collect()) after loading the file to pandas

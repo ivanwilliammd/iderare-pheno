@@ -1,6 +1,8 @@
-from typing import List, Union
+from __future__ import annotations
 
-from fastapi import FastAPI, HTTPException, Response
+from typing import Any
+
+from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
 
 from iderare_pheno.converter import batchconvert
@@ -17,13 +19,13 @@ class Coding(BaseModel):
 
 
 class CodeableConcept(BaseModel):
-    coding: List[Coding]
+    coding: list[Coding]
 
 
 class Observation(BaseModel):
     resourceType: str = "Observation"
     code: CodeableConcept
-    interpretation: List[CodeableConcept]
+    interpretation: list[CodeableConcept]
 
 
 class Condition(BaseModel):
@@ -36,12 +38,12 @@ class OtherResource(BaseModel):
 
 
 class BundleEntry(BaseModel):
-    resource: Union[Observation, Condition, OtherResource]
+    resource: Observation | Condition | OtherResource
 
 
 class Bundle(BaseModel):
     resourceType: str = "Bundle"
-    entry: List[BundleEntry]
+    entry: list[BundleEntry]
 
 
 class TermCode(BaseModel):
@@ -91,17 +93,17 @@ def resource_object(resource, resource_type, index=None):
             raise HTTPException(
                 status_code=400, detail=f"Unsupported FHIR resource type: {resource_type}"
             )
-    except IndexError:
+    except IndexError as err:
         raise HTTPException(
             status_code=400,
             detail=f"Missing required fields in FHIR resource type: {resource_type}",
-        )
+        ) from err
 
     # return TermCode(system=code_coding.system, code=code_coding.code)
 
 
 @app.post("/fhir/parse/bundle")
-async def fhir_batch_parse(bundle: Bundle) -> Response:
+async def fhir_batch_parse(bundle: Bundle) -> dict[str, list[str]]:
     prefixes = prefix_dict.values()
     term_codes = []
     i = -1
@@ -118,11 +120,11 @@ async def fhir_batch_parse(bundle: Bundle) -> Response:
 
 
 @app.post("/fhir/parse/resource")
-async def fhir_parse(resource: Union[Observation, Condition]) -> Response:
+async def fhir_parse(resource: Observation | Condition) -> dict[str, str]:
     return {"result": resource_object(resource, resource.resourceType)}
 
 
 @app.post("/iderare/batchconvert")
-async def iderare_batch_convert(data: List[str]) -> Response:
+async def iderare_batch_convert(data: list[str]) -> dict[str, Any]:
     hpo_sets, diagnosis_sets = batchconvert(data)
     return {"hpo_sets": hpo_sets, "diagnosis_sets": diagnosis_sets}

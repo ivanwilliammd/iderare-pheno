@@ -1,4 +1,4 @@
-from datetime import datetime
+from datetime import datetime, timezone
 from pathlib import Path
 
 from iderare_pheno.version import VERSION
@@ -28,7 +28,7 @@ def main():
     lines.insert(
         insert_index + 1,
         f"## [v{VERSION}](https://github.com/ivanwilliammd/iderare-pheno/releases/tag/v{VERSION}) - "
-        f"{datetime.now().strftime('%Y-%m-%d')}\n",
+        f"{datetime.now(timezone.utc).strftime('%Y-%m-%d')}\n",
     )
 
     with changelog.open("w") as f:

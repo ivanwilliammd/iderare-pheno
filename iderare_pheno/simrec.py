@@ -10,10 +10,10 @@ def omim2object(omim_set):
     omim_object = []
     for item in list(set(omim_set)):
         try:
-            disease = Omim.get(int(item.strip("OMIM:")))
+            disease = Omim.get(int(item.removeprefix("OMIM:")))
             omim_object.append(disease)
-        except Exception as e:
-            print(f"Failed to process OMIM code {item}: {str(e)}")
+        except (ValueError, KeyError, TypeError) as e:
+            print(f"Failed to process OMIM code {item}: {e!s}")
             continue
 
     return omim_object
@@ -27,13 +27,13 @@ def hpos2set(hpo_set):
 
 # Get HPO Name from HPO Code
 def hpo2name(hpo_set):
-    hpo_name = [Ontology.hpo(int(d.strip("HP:"))).name for d in hpo_set]
+    hpo_name = [Ontology.hpo(int(d.removeprefix("HP:"))).name for d in hpo_set]
     return hpo_name
 
 
 # Get OMIM Name from HPO Code
 def omim2name(diagnosis_sets):
-    omim_name = [Omim.get(int(d.strip("OMIM:"))).name for d in diagnosis_sets]
+    omim_name = [Omim.get(int(d.removeprefix("OMIM:"))).name for d in diagnosis_sets]
     return omim_name
 
 
@@ -157,7 +157,7 @@ def omim_recommendation(hpo_set, type="gene", threshold=0.3, recommendation=50):
         print("The type is not recognized, please choose between gene or disease.")
         return [], [], [], [], []
 
-    print("Get the similarity check between {} Gene and HPOSet".format(len(omim_set)))
+    print(f"Get the similarity check between {len(omim_set)} Gene and HPOSet")
 
     # Check similarity between phenotype (HPO) and differential diagnosis (OMIM)
     return similarity_linkage(omim_set, hpo_sets, threshold, recommendation, linkage="threshold")

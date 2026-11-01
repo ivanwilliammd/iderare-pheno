@@ -6,8 +6,8 @@ This script is interactive and will prompt you for various inputs.
 """
 
 import sys
+from collections.abc import Generator
 from pathlib import Path
-from typing import Generator, List, Tuple
 
 import click
 from click_help_colors import HelpColorsCommand
@@ -115,7 +115,7 @@ def main(
     # Start with a fresh README.
     readme_contents = f"""# {package_actual_name}\n"""
     if not dry_run:
-        with open(REPO_BASE / "README.md", mode="w+t", encoding="utf-8") as readme_file:
+        with open(REPO_BASE / "README.md", mode="w+", encoding="utf-8") as readme_file:
             readme_file.write(readme_contents)
     else:
         print("Replacing README.md contents with:\n", Markdown(readme_contents))
@@ -157,7 +157,7 @@ def iterfiles(dir: Path) -> Generator[Path, None, None]:
             yield path
 
 
-def personalize_file(path: Path, dry_run: bool, replacements: List[Tuple[str, str]]):
+def personalize_file(path: Path, dry_run: bool, replacements: list[tuple[str, str]]):
     with path.open(mode="r+t", encoding="utf-8") as file:
         filedata = file.read()
 
