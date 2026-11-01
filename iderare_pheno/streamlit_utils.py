@@ -1,6 +1,6 @@
 import io
 import os
-from datetime import UTC, datetime
+from datetime import datetime, timezone
 
 import pandas as pd
 import scipy.cluster
@@ -75,7 +75,7 @@ def linkage_dendrogram(linkage, labels, title="Similarity", threshold=0.3, path_
 
     path_to_save = os.path.join(
         "{date_time}_{title}.png".format(
-            date_time=datetime.now(UTC).strftime("%Y%m%d_%H%M%S"), title=title[0:30]
+            date_time=datetime.now(timezone.utc).strftime("%Y%m%d_%H%M%S"), title=title[0:30]
         )
     )
     img = io.BytesIO()

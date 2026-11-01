@@ -7,7 +7,7 @@
 import logging
 import os
 import sys
-from datetime import UTC, datetime
+from datetime import datetime, timezone
 
 # -- Path setup --------------------------------------------------------------
 
@@ -23,7 +23,7 @@ from iderare_pheno import VERSION, VERSION_SHORT
 # -- Project information -----------------------------------------------------
 
 project = "iderare-pheno"
-copyright = f"{datetime.now(UTC).year}, Ivan William Harsono"
+copyright = f"{datetime.now(timezone.utc).year}, Ivan William Harsono"
 author = "Ivan William Harsono"
 version = VERSION_SHORT
 release = VERSION

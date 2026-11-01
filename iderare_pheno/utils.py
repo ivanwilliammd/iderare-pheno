@@ -1,5 +1,5 @@
 import os
-from datetime import UTC, datetime
+from datetime import datetime, timezone
 
 import pandas as pd
 import scipy.cluster
@@ -23,7 +23,7 @@ def generate_yml(hpo_sets, filename="iderare.yml"):
 # Convert data(s) to dataframe
 def list2tsv(term_id, name, sim_score=None, filename=None):
     if filename is None:
-        filename = f"{datetime.now(UTC):%Y%m%d_%H%M%S}_result"
+        filename = f"{datetime.now(timezone.utc):%Y%m%d_%H%M%S}_result"
     if sim_score is None:
         data = {"id": term_id, "name": name}
     else:
@@ -72,5 +72,5 @@ def linkage_dendrogram(linkage, labels, title="Similarity", threshold=0.3, path_
         print("Folder output already exists.")
 
     if path_to_save is None:
-        path_to_save = f"output/{datetime.now(UTC):%Y%m%d_%H%M%S}_{title[0:30]}.png"
+        path_to_save = f"output/{datetime.now(timezone.utc):%Y%m%d_%H%M%S}_{title[0:30]}.png"
     plt.savefig(path_to_save)
