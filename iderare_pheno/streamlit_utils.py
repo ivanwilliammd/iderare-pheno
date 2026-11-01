@@ -1,6 +1,6 @@
 import io
 import os
-from datetime import datetime
+from datetime import UTC, datetime
 
 import pandas as pd
 import scipy.cluster
@@ -13,7 +13,7 @@ iderare_template = os.path.join(os.path.dirname(__file__), "templates", "templat
 
 # Fill template_iderare.yml with the given phenotype
 def generate_yml(hpo_sets):
-    with open(iderare_template, "r") as f:
+    with open(iderare_template) as f:
         y = yaml.safe_load(f)
         y["analysis"]["hpo_ids"] = hpo_sets
 
@@ -75,7 +75,7 @@ def linkage_dendrogram(linkage, labels, title="Similarity", threshold=0.3, path_
 
     path_to_save = os.path.join(
         "{date_time}_{title}.png".format(
-            date_time=datetime.now().strftime("%Y%m%d_%H%M%S"), title=title[0:30]
+            date_time=datetime.now(UTC).strftime("%Y%m%d_%H%M%S"), title=title[0:30]
         )
     )
     img = io.BytesIO()

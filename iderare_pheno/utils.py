@@ -1,5 +1,5 @@
 import os
-from datetime import datetime
+from datetime import UTC, datetime
 
 import pandas as pd
 import scipy.cluster
@@ -11,29 +11,26 @@ iderare_template = os.path.join(os.path.dirname(__file__), "templates", "templat
 
 # Fill template_iderare.yml with the given phenotype
 def generate_yml(hpo_sets, filename="iderare.yml"):
-    with open(iderare_template, "r") as f:
+    with open(iderare_template) as f:
         y = yaml.safe_load(f)
         y["analysis"]["hpo_ids"] = hpo_sets
 
     with open(filename, "w+") as o:
         yaml.dump(y, o, default_flow_style=False, sort_keys=False)
-        print("File {} has been created.".format(filename))
+        print(f"File {filename} has been created.")
 
 
 # Convert data(s) to dataframe
-def list2tsv(
-    term_id,
-    name,
-    sim_score=None,
-    filename="{}_result".format(datetime.now().strftime("%Y%m%d_%H%M%S")),
-):
+def list2tsv(term_id, name, sim_score=None, filename=None):
+    if filename is None:
+        filename = f"{datetime.now(UTC):%Y%m%d_%H%M%S}_result"
     if sim_score is None:
         data = {"id": term_id, "name": name}
     else:
         rank = [i + 1 for i in range(len(name))]
         data = {"rank": rank, "id": term_id, "name": name, "score": sim_score}
     df = pd.DataFrame(data)
-    df.to_csv("{}.tsv".format(filename), index=False, sep="\t")
+    df.to_csv(f"{filename}.tsv", index=False, sep="\t")
     return df
 
 
@@ -75,7 +72,5 @@ def linkage_dendrogram(linkage, labels, title="Similarity", threshold=0.3, path_
         print("Folder output already exists.")
 
     if path_to_save is None:
-        path_to_save = "output/{date_time}_{title}.png".format(
-            date_time=datetime.now().strftime("%Y%m%d_%H%M%S"), title=title[0:30]
-        )
+        path_to_save = f"output/{datetime.now(UTC):%Y%m%d_%H%M%S}_{title[0:30]}.png"
     plt.savefig(path_to_save)
